@@ -1,0 +1,60 @@
+@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:700,400&subset=latin,vietnamese,latin-ext);
+body { background: url('../image/cream_pixels.png'); } 
+.inner{ width: 978px; margin:0 auto;}
+
+.logo{ float: left; margin:0; border-right:1px dotted #00adb6; padding: 4px 10px 8px 10px;}
+.logo  img{ height: 40px; }
+
+#top{ height:97px; }
+#top-fixed{ position: fixed; width: 100%; z-index:1000;}
+
+.top-nav{ background: #005c61; padding:0;}
+.top-nav ul.menu { padding:0; margin:0; }
+.top-nav ul.menu li{ margin:0; float: left; border-right:1px dotted #00adb6; }
+.top-nav ul.menu li a{ color: #00f2ff; font-size: 18px; font-family: 'Roboto Condensed'; font-weight: 700; line-height: 32px; display:inline-block; padding: 10px 10px; }
+.top-nav ul.menu li a:hover{ text-decoration: none; background: #00696f; color:#FFF; }
+.top-nav [class^="menu-"],
+.top-nav [class*="menu-"] { background-image: url('../image/shopping-icon-set.png'); width: 32px; height: 32px; line-height: 32px; display: inline-block; vertical-align: text-bottom; margin-right: 5px;}
+.top-nav ul.menu li a:hover [class^="menu-"],
+.top-nav ul.menu li a:hover  [class*="menu-"] { background-image: url('../image/shopping-icon-set-active.png'); }
+.top-nav .menu-product{ background-position: 64px 0px;}
+.top-nav .menu-fashion{ background-position: 32px 0px;}
+.top-nav .menu-service{ background-position: 0px 0px;}
+.top-nav .login a{ display: inline-block; line-height: 56px; color:#FFF; border-left:1px dotted #00adb6; padding:0 10px;}
+.top-nav .login a:hover { text-decoration:none; background: #00696f;}
+.top-nav  .locations select { display: inline-block; margin: 13px 10px; width: 150px;}
+
+.sub-top-nav { background: #00c7d1; padding:5px 0; border-bottom: 1px solid #77f9ff;}
+.sub-top-nav ul.menu { padding:0; margin:0; }
+.sub-top-nav ul.menu li{ margin:0; float: left; }
+.sub-top-nav ul.menu li a{ text-decoration:none; color:#005c61; display: inline-block; padding: 5px 10px; margin-right: 10px; font-family: 'Roboto Condensed'; font-weight: 400; }
+.sub-top-nav ul.menu li a.active, .sub-top-nav ul.menu li a:hover { border: 1px solid #00dde8; padding: 4px 10px; background:#005c61; color: #FFF; -webkit-border-radius: 5px;-moz-border-radius: 5px; border-radius: 5px; box-shadow: 0 3px 3px rgba(0,0,0,0.5) inset;-moz-box-shadow: 0 3px 3px rgba(0,0,0,0.5) inset;-webkit-box-shadow: 0 3px 3px rgba(0,0,0,0.5) inset;}
+
+#scroller { background: url('../image/retina_wood.png'); }
+
+#content {  }
+#content div.cell:nth-child(2n+1){ margin-right: 18px; }
+#content .cell{ margin-top:18px; border:1px #CCC solid; padding: 5px; background: #FFF; float: left; position: relative; }
+#content .cell img {  }
+#content .cell .description { width:448px; background:url('../image/cell-bg.png'); position: absolute; bottom: 5px; left: 5px; padding: 10px; }
+#content .cell .description h3{ font-family: 'Roboto Condensed'; font-weight: 700; color:#FFF; margin: 5px 0; text-shadow: 1px 1px #333 }
+#content .cell .description h3 a{ color:#FFF; text-decoration: none;}
+#content .cell .description div { display: none; }
+#content .cell .description div p{ font-family: 'Roboto Condensed'; font-weight: 400; margin:5px 0; }
+#content .cell .description div p.summary { max-width: 280px; text-overflow: ellipsis; float: left; border-right:1px dotted #333; padding-right: 10px; margin-right: 10px;}
+#content .cell .description div p.prices{border-right:1px dotted #333; float: left; padding-right: 10px; margin-right: 10px;}
+#content .cell .description div p.prices .old-price{ text-decoration:line-through;}
+#content .cell .description div p.prices .price{ font-size: 24px; color: red; }
+
+#subcribe { background:#00c7d1; margin-top:20px; height: 30px; overflow: hidden; padding: 10px 0;border-bottom: 1px solid #77f9ff; }
+#subcribe  form { width: 400px; margin:0 auto; }
+
+#footer { background: #005c61; padding: 20px 0; font-family: 'Roboto Condensed'; font-weight: 400; color: #FFF; }
+#footer div.column { float: left; width: 33%;  }
+#footer div.column a { color:#fff; text-decoration: none; }
+#footer div.column a:hover{ color:#00f2ff; }
+#footer div.column  strong { display: inline-block; padding: 0 0 5px 0; margin:0 0 5px 0; border-bottom: 1px #FFF dotted;}
+#footer div.social-icon { margin-bottom: 10px; }
+#footer div.social-icon a { display: inline-block; margin-right: 7px; }
+
+.go-top { display:block; height:46px; width: 46px; position: fixed; bottom: 20px; right: 20px; background: url('../image/go_top.png'); }
