@@ -15,18 +15,29 @@ $_['text_option_value']      = 'Option Value';
 $_['text_percent']           = 'Percentage';
 $_['text_amount']            = 'Fixed Amount';
 
+// Tab
+$_['tab_special']            = 'Deals';
+
+//Button
+$_['button_add_special']     = 'Add Deal';
+
 // Column
 $_['column_name']            = 'Product Name';
 $_['column_model']           = 'Model';
 $_['column_image']           = 'Image';
 $_['column_price']           = 'Price';
+$_['column_quantity_entered']= 'Quantity Entered';
 $_['column_quantity']        = 'Quantity';
+$_['column_quantity_sold']   = 'Quantity Sold';
 $_['column_status']          = 'Status';
 $_['column_action']          = 'Action';
 
 // Entry
+$_['entry_deal_quantity_init']  = 'Quantity Init:';
+$_['entry_deal_quantity_sold']  = 'Quantity Sold:';
+$_['entry_deal_id']             = 'ID Deal:';
 $_['entry_name']             = 'Product Name:';
-$_['entry_meta_keyword'] 	 = 'Meta Tag Keywords:';
+$_['entry_meta_keyword']     = 'Meta Tag Keywords:';
 $_['entry_meta_description'] = 'Meta Tag Description:';
 $_['entry_featured']         = 'Featured:';
 $_['entry_description']      = 'Description:';
@@ -39,12 +50,15 @@ $_['entry_ean']              = 'EAN:<br/><span class="help">European Article Num
 $_['entry_jan']              = 'JAN:<br/><span class="help">Japanese Article Number</span>';
 $_['entry_isbn']             = 'ISBN:<br/><span class="help">International Standard Book Number</span>';
 $_['entry_mpn']              = 'MPN:<br/><span class="help">Manufacturer Part Number</span>';
+$_['entry_zone']             = 'Tỉnh/Thành phố:';
 $_['entry_location']         = 'Location:';
 $_['entry_shipping']         = 'Requires Shipping:'; 
 $_['entry_manufacturer']     = 'Manufacturer:<br /><span class="help">(Autocomplete)</span>';
 $_['entry_date_available']   = 'Date Available:';
+$_['entry_quantity_entered'] = 'Quantity Entered:';
 $_['entry_quantity']         = 'Quantity:';
 $_['entry_minimum']          = 'Minimum Quantity:<br/><span class="help">Force a minimum ordered amount</span>';
+$_['entry_quantity_sold']    = 'Quantity Sold:';
 $_['entry_stock_status']     = 'Out Of Stock Status:<br/><span class="help">Status shown when a product is out of stock</span>';
 $_['entry_price']            = 'Price:';
 $_['entry_tax_class']        = 'Tax Class:';

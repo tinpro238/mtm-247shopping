@@ -58,7 +58,12 @@
         y.children("ul").children("li").css("margin-left",i_m+"px");
         y.children("ul").children("li").children("a").css("color",q);
         y.children("ul").children("li").children("a").css("font-size",o);
-		
+		y.hover(function(){
+            stop()
+            },function(){
+            play()
+            });
+			
 		var _arr = y.children("ul").find('li').toArray();
 		for (var i=0; i<z; i++)
 			wU += $(_arr[i]).find('img').innerWidth();

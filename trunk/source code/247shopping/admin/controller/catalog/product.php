@@ -245,10 +245,22 @@ class ControllerCatalogProduct extends Controller {
             $filter_price = null;
         }
 
+        if (isset($this->request->get['filter_quantity_entered'])) {
+            $filter_quantity_entered = $this->request->get['filter_quantity_entered'];
+        } else {
+            $filter_quantity_entered = null;
+        }
+        
         if (isset($this->request->get['filter_quantity'])) {
             $filter_quantity = $this->request->get['filter_quantity'];
         } else {
             $filter_quantity = null;
+        }
+        
+        if (isset($this->request->get['filter_quantity_sold'])) {
+            $filter_quantity_sold = $this->request->get['filter_quantity_sold'];
+        } else {
+            $filter_quantity_sold = null;
         }
 
         if (isset($this->request->get['filter_status'])) {
@@ -289,8 +301,16 @@ class ControllerCatalogProduct extends Controller {
             $url .= '&filter_price=' . $this->request->get['filter_price'];
         }
 
+        if (isset($this->request->get['filter_quantity_entered'])) {
+            $url .= '&filter_quantity_entered=' . $this->request->get['filter_quantity_entered'];
+        }
+        
         if (isset($this->request->get['filter_quantity'])) {
             $url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
+        }
+        
+        if (isset($this->request->get['filter_quantity_sold'])) {
+            $url .= '&filter_quantity_sold=' . $this->request->get['filter_quantity_sold'];
         }
 
         if (isset($this->request->get['filter_status'])) {
@@ -333,7 +353,9 @@ class ControllerCatalogProduct extends Controller {
             'filter_name' => $filter_name,
             'filter_model' => $filter_model,
             'filter_price' => $filter_price,
+            'filter_quantity_entered' => $filter_quantity_entered,
             'filter_quantity' => $filter_quantity,
+            'filter_quantity_sold' => $filter_quantity_sold,
             'filter_status' => $filter_status,
             'sort' => $sort,
             'order' => $order,
@@ -380,7 +402,9 @@ class ControllerCatalogProduct extends Controller {
                 'price' => $result['price'],
                 'special' => $special,
                 'image' => $image,
+                'quantity_entered' => $result['quantity_entered'],
                 'quantity' => $result['quantity'],
+                'quantity_sold' => $result['quantity_sold'],
                 'status' => ($result['status'] ? $this->language->get('text_enabled') : $this->language->get('text_disabled')),
                 'selected' => isset($this->request->post['selected']) && in_array($result['product_id'], $this->request->post['selected']),
                 'action' => $action
@@ -398,7 +422,9 @@ class ControllerCatalogProduct extends Controller {
         $this->data['column_name'] = $this->language->get('column_name');
         $this->data['column_model'] = $this->language->get('column_model');
         $this->data['column_price'] = $this->language->get('column_price');
+        $this->data['column_quantity_entered'] = $this->language->get('column_quantity_entered');
         $this->data['column_quantity'] = $this->language->get('column_quantity');
+        $this->data['column_quantity_sold'] = $this->language->get('column_quantity_sold');
         $this->data['column_status'] = $this->language->get('column_status');
         $this->data['column_action'] = $this->language->get('column_action');
 
@@ -437,8 +463,16 @@ class ControllerCatalogProduct extends Controller {
             $url .= '&filter_price=' . $this->request->get['filter_price'];
         }
 
+        if (isset($this->request->get['filter_quantity_entered'])) {
+            $url .= '&filter_quantity_entered=' . $this->request->get['filter_quantity_entered'];
+        }
+        
         if (isset($this->request->get['filter_quantity'])) {
             $url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
+        }
+        
+        if (isset($this->request->get['filter_quantity_sold'])) {
+            $url .= '&filter_quantity_sold=' . $this->request->get['filter_quantity_sold'];
         }
 
         if (isset($this->request->get['filter_status'])) {
@@ -458,7 +492,9 @@ class ControllerCatalogProduct extends Controller {
         $this->data['sort_name'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . '&sort=pd.name' . $url, 'SSL');
         $this->data['sort_model'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . '&sort=p.model' . $url, 'SSL');
         $this->data['sort_price'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . '&sort=p.price' . $url, 'SSL');
+        $this->data['sort_quantity_entered'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . '&sort=p.quantity_entered' . $url, 'SSL');
         $this->data['sort_quantity'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . '&sort=p.quantity' . $url, 'SSL');
+        $this->data['sort_quantity_sold'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . '&sort=p.quantity_sold' . $url, 'SSL');
         $this->data['sort_status'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . '&sort=p.status' . $url, 'SSL');
         $this->data['sort_order'] = $this->url->link('catalog/product', 'token=' . $this->session->data['token'] . '&sort=p.sort_order' . $url, 'SSL');
 
@@ -476,8 +512,16 @@ class ControllerCatalogProduct extends Controller {
             $url .= '&filter_price=' . $this->request->get['filter_price'];
         }
 
+        if (isset($this->request->get['filter_quantity_entered'])) {
+            $url .= '&filter_quantity_entered=' . $this->request->get['filter_quantity_entered'];
+        }
+        
         if (isset($this->request->get['filter_quantity'])) {
             $url .= '&filter_quantity=' . $this->request->get['filter_quantity'];
+        }
+        
+        if (isset($this->request->get['filter_quantity_sold'])) {
+            $url .= '&filter_quantity_sold=' . $this->request->get['filter_quantity_sold'];
         }
 
         if (isset($this->request->get['filter_status'])) {
@@ -504,7 +548,9 @@ class ControllerCatalogProduct extends Controller {
         $this->data['filter_name'] = $filter_name;
         $this->data['filter_model'] = $filter_model;
         $this->data['filter_price'] = $filter_price;
+        $this->data['filter_quantity_entered'] = $filter_quantity_entered;
         $this->data['filter_quantity'] = $filter_quantity;
+        $this->data['filter_quantity_sold'] = $filter_quantity_sold;
         $this->data['filter_status'] = $filter_status;
 
         $this->data['sort'] = $sort;
@@ -539,7 +585,13 @@ class ControllerCatalogProduct extends Controller {
         $this->data['text_none'] = $this->language->get('text_none');
         $this->data['text_percent'] = $this->language->get('text_percent');
         $this->data['text_amount'] = $this->language->get('text_amount');
-
+        
+        //CUSTOMIZE BY TINNGUYEN
+        $this->data['entry_deal_id'] = $this->language->get('entry_deal_id');
+        $this->data['entry_deal_quantity_init'] = $this->language->get('entry_deal_quantity_init');
+        $this->data['entry_deal_quantity_sold'] = $this->language->get('entry_deal_quantity_sold');
+        //END CUSTOMIZE
+        
         $this->data['entry_name'] = $this->language->get('entry_name');
         $this->data['entry_meta_description'] = $this->language->get('entry_meta_description');
         $this->data['entry_meta_keyword'] = $this->language->get('entry_meta_keyword');
@@ -554,12 +606,15 @@ class ControllerCatalogProduct extends Controller {
         $this->data['entry_jan'] = $this->language->get('entry_jan');
         $this->data['entry_isbn'] = $this->language->get('entry_isbn');
         $this->data['entry_mpn'] = $this->language->get('entry_mpn');
+        $this->data['entry_zone'] = $this->language->get('entry_zone');
         $this->data['entry_location'] = $this->language->get('entry_location');
         $this->data['entry_minimum'] = $this->language->get('entry_minimum');
         $this->data['entry_manufacturer'] = $this->language->get('entry_manufacturer');
         $this->data['entry_shipping'] = $this->language->get('entry_shipping');
         $this->data['entry_date_available'] = $this->language->get('entry_date_available');
+        $this->data['entry_quantity_entered'] = $this->language->get('entry_quantity_entered');
         $this->data['entry_quantity'] = $this->language->get('entry_quantity');
+        $this->data['entry_quantity_sold'] = $this->language->get('entry_quantity_sold');
         $this->data['entry_stock_status'] = $this->language->get('entry_stock_status');
         $this->data['entry_price'] = $this->language->get('entry_price');
         $this->data['entry_tax_class'] = $this->language->get('entry_tax_class');
@@ -778,6 +833,22 @@ class ControllerCatalogProduct extends Controller {
             $this->data['mpn'] = '';
         }
 
+        //CUSTOMIZE BY TINNGUYEN
+        
+        $this->load->model('localisation/deal_zone');
+        
+        $this->data['zone'] = $this->model_localisation_deal_zone->getDealZonesByCountryId($this->config->get('config_country_id'));
+
+        if (isset($this->request->post['zone_id'])) {
+            $this->data['zone_id'] = $this->request->post['zone_id'];
+        } elseif (!empty($product_info)) {
+            $this->data['zone_id'] = $product_info['zone_id'];
+        } else {
+            $this->data['zone_id'] = 3780;
+        }
+        
+        //END CUSTOMIZE
+        
         if (isset($this->request->post['location'])) {
             $this->data['location'] = $this->request->post['location'];
         } elseif (!empty($product_info)) {
@@ -859,13 +930,29 @@ class ControllerCatalogProduct extends Controller {
         } else {
             $this->data['date_available'] = date('Y-m-d', time() - 86400);
         }
+        
+        if (isset($this->request->post['quantity_entered'])) {
+            $this->data['quantity_entered'] = $this->request->post['quantity_entered'];
+        } elseif (!empty($product_info)) {
+            $this->data['quantity_entered'] = $product_info['quantity_entered'];
+        } else {
+            $this->data['quantity_entered'] = 0;
+        }
 
         if (isset($this->request->post['quantity'])) {
             $this->data['quantity'] = $this->request->post['quantity'];
         } elseif (!empty($product_info)) {
             $this->data['quantity'] = $product_info['quantity'];
         } else {
-            $this->data['quantity'] = 1;
+            $this->data['quantity'] = 0;
+        }
+        
+        if (isset($this->request->post['quantity_sold'])) {
+            $this->data['quantity_sold'] = $this->request->post['quantity_sold'];
+        } elseif (!empty($product_info)) {
+            $this->data['quantity_sold'] = $product_info['quantity_sold'];
+        } else {
+            $this->data['quantity_sold'] = 0;
         }
 
         if (isset($this->request->post['minimum'])) {
@@ -1267,7 +1354,10 @@ class ControllerCatalogProduct extends Controller {
             }
         }
 
-        if ((utf8_strlen($this->request->post['model']) < 1) || (utf8_strlen($this->request->post['model']) > 64)) {
+//        if ((utf8_strlen($this->request->post['model']) < 1) || (utf8_strlen($this->request->post['model']) > 64)) {
+//            $this->error['model'] = $this->language->get('error_model');
+//        }
+        if (utf8_strlen($this->request->post['model']) > 64) {
             $this->error['model'] = $this->language->get('error_model');
         }
 
