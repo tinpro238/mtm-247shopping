@@ -10,7 +10,7 @@ Target Server Type    : MYSQL
 Target Server Version : 50524
 File Encoding         : 65001
 
-Date: 2013-08-05 11:45:14
+Date: 2013-08-09 12:26:54
 */
 
 SET FOREIGN_KEY_CHECKS=0;
@@ -215,7 +215,7 @@ CREATE TABLE `oc_banner` (
   `name` varchar(64) NOT NULL,
   `status` tinyint(1) NOT NULL,
   PRIMARY KEY (`banner_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=9 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_banner
@@ -223,6 +223,7 @@ CREATE TABLE `oc_banner` (
 INSERT INTO oc_banner VALUES ('6', 'HP Products', '1');
 INSERT INTO oc_banner VALUES ('7', 'Samsung Tab', '1');
 INSERT INTO oc_banner VALUES ('8', 'Manufacturers', '1');
+INSERT INTO oc_banner VALUES ('9', 'Sản phẩm hot', '1');
 
 -- ----------------------------
 -- Table structure for `oc_banner_image`
@@ -234,7 +235,7 @@ CREATE TABLE `oc_banner_image` (
   `link` varchar(255) NOT NULL,
   `image` varchar(255) NOT NULL,
   PRIMARY KEY (`banner_image_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=78 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=100 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_banner_image
@@ -247,6 +248,17 @@ INSERT INTO oc_banner_image VALUES ('74', '8', 'index.php?route=product/manufact
 INSERT INTO oc_banner_image VALUES ('71', '8', 'index.php?route=product/manufacturer/info&amp;manufacturer_id=10', 'data/demo/sony_logo.jpg');
 INSERT INTO oc_banner_image VALUES ('72', '8', 'index.php?route=product/manufacturer/info&amp;manufacturer_id=6', 'data/demo/palm_logo.jpg');
 INSERT INTO oc_banner_image VALUES ('76', '8', 'index.php?route=product/manufacturer/info&amp;manufacturer_id=7', 'data/demo/hp_logo.jpg');
+INSERT INTO oc_banner_image VALUES ('99', '9', '#', 'data/slideshow/11.png');
+INSERT INTO oc_banner_image VALUES ('98', '9', '#', 'data/slideshow/10.png');
+INSERT INTO oc_banner_image VALUES ('97', '9', '#', 'data/slideshow/09.png');
+INSERT INTO oc_banner_image VALUES ('96', '9', '#', 'data/slideshow/08.png');
+INSERT INTO oc_banner_image VALUES ('95', '9', '#', 'data/slideshow/07.png');
+INSERT INTO oc_banner_image VALUES ('94', '9', '#', 'data/slideshow/06.png');
+INSERT INTO oc_banner_image VALUES ('93', '9', '#', 'data/slideshow/05.png');
+INSERT INTO oc_banner_image VALUES ('92', '9', '#', 'data/slideshow/04.png');
+INSERT INTO oc_banner_image VALUES ('91', '9', '#', 'data/slideshow/03.png');
+INSERT INTO oc_banner_image VALUES ('90', '9', '#', 'data/slideshow/02.png');
+INSERT INTO oc_banner_image VALUES ('89', '9', '#', 'data/slideshow/01.png');
 
 -- ----------------------------
 -- Table structure for `oc_banner_image_description`
@@ -279,6 +291,28 @@ INSERT INTO oc_banner_image_description VALUES ('73', '2', '8', 'Apple');
 INSERT INTO oc_banner_image_description VALUES ('72', '2', '8', 'Palm');
 INSERT INTO oc_banner_image_description VALUES ('71', '2', '8', 'Sony');
 INSERT INTO oc_banner_image_description VALUES ('76', '2', '8', 'Hewlett-Packard');
+INSERT INTO oc_banner_image_description VALUES ('99', '1', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('99', '2', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('98', '1', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('98', '2', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('97', '1', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('97', '2', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('96', '1', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('96', '2', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('95', '1', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('95', '2', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('94', '1', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('94', '2', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('93', '1', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('93', '2', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('92', '1', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('92', '2', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('91', '1', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('91', '2', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('90', '1', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('90', '2', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('89', '1', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
+INSERT INTO oc_banner_image_description VALUES ('89', '2', '9', 'Ấm Đun Siêu Tốc Fujishi FB18');
 
 -- ----------------------------
 -- Table structure for `oc_category`
@@ -302,7 +336,7 @@ CREATE TABLE `oc_category` (
 -- ----------------------------
 INSERT INTO oc_category VALUES ('25', '', '0', '1', '1', '3', '1', '2009-01-31 01:04:25', '2011-05-30 12:14:55');
 INSERT INTO oc_category VALUES ('27', '', '20', '0', '0', '2', '1', '2009-01-31 01:55:34', '2010-08-22 06:32:15');
-INSERT INTO oc_category VALUES ('20', 'data/demo/compaq_presario.jpg', '0', '1', '1', '1', '1', '2009-01-05 21:49:43', '2011-07-16 02:14:42');
+INSERT INTO oc_category VALUES ('20', 'data/demo/compaq_presario.jpg', '0', '1', '1', '1', '1', '2009-01-05 21:49:43', '2013-08-08 02:23:56');
 INSERT INTO oc_category VALUES ('24', '', '0', '1', '1', '5', '1', '2009-01-20 02:36:26', '2011-05-30 12:15:18');
 INSERT INTO oc_category VALUES ('18', 'data/demo/hp_2.jpg', '0', '1', '0', '2', '1', '2009-01-05 21:49:15', '2011-05-30 12:13:55');
 INSERT INTO oc_category VALUES ('17', '', '0', '1', '1', '4', '1', '2009-01-03 21:08:57', '2011-05-30 12:15:11');
@@ -369,7 +403,7 @@ INSERT INTO oc_category_description VALUES ('26', '1', 'PC', '', '', '');
 INSERT INTO oc_category_description VALUES ('17', '1', 'Software', '', '', '');
 INSERT INTO oc_category_description VALUES ('25', '1', 'Components', '', '', '');
 INSERT INTO oc_category_description VALUES ('24', '1', 'Phones &amp; PDAs', '', '', '');
-INSERT INTO oc_category_description VALUES ('20', '1', 'Desktops', '&lt;p&gt;\r\n	Example of category description text&lt;/p&gt;\r\n', 'Example of category description', '');
+INSERT INTO oc_category_description VALUES ('20', '1', 'Desktops', '&lt;p&gt;Example of category description text&lt;/p&gt;\r\n', 'Example of category description', '');
 INSERT INTO oc_category_description VALUES ('35', '1', 'test 1', '', '', '');
 INSERT INTO oc_category_description VALUES ('36', '1', 'test 2', '', '', '');
 INSERT INTO oc_category_description VALUES ('37', '1', 'test 5', '', '', '');
@@ -407,7 +441,7 @@ INSERT INTO oc_category_description VALUES ('26', '2', 'PC', '', '', '');
 INSERT INTO oc_category_description VALUES ('17', '2', 'Software', '', '', '');
 INSERT INTO oc_category_description VALUES ('25', '2', 'Components', '', '', '');
 INSERT INTO oc_category_description VALUES ('24', '2', 'Phones &amp; PDAs', '', '', '');
-INSERT INTO oc_category_description VALUES ('20', '2', 'Desktops', '&lt;p&gt;\r\n	Example of category description text&lt;/p&gt;\r\n', 'Example of category description', '');
+INSERT INTO oc_category_description VALUES ('20', '2', 'Desktops', '&lt;p&gt;Example of category description text&lt;/p&gt;\r\n', 'Example of category description', '');
 INSERT INTO oc_category_description VALUES ('35', '2', 'test 1', '', '', '');
 INSERT INTO oc_category_description VALUES ('36', '2', 'test 2', '', '', '');
 INSERT INTO oc_category_description VALUES ('37', '2', 'test 5', '', '', '');
@@ -450,6 +484,10 @@ CREATE TABLE `oc_category_filter` (
 -- ----------------------------
 -- Records of oc_category_filter
 -- ----------------------------
+INSERT INTO oc_category_filter VALUES ('20', '1');
+INSERT INTO oc_category_filter VALUES ('20', '2');
+INSERT INTO oc_category_filter VALUES ('20', '3');
+INSERT INTO oc_category_filter VALUES ('20', '4');
 
 -- ----------------------------
 -- Table structure for `oc_category_path`
@@ -974,7 +1012,7 @@ CREATE TABLE `oc_currency` (
 INSERT INTO oc_currency VALUES ('1', 'Pound Sterling', 'GBP', '£', '', '2', '0.65810001', '0', '2013-08-01 10:45:25');
 INSERT INTO oc_currency VALUES ('2', 'US Dollar', 'USD', '$', '', '2', '1.00000000', '1', '2013-08-01 10:50:20');
 INSERT INTO oc_currency VALUES ('3', 'Euro', 'EUR', '', '€', '2', '0.75520003', '0', '2013-08-01 10:45:25');
-INSERT INTO oc_currency VALUES ('4', 'Viet Nam Dong', 'VND', '', 'đ', '', '1.00000000', '1', '2013-08-05 03:45:42');
+INSERT INTO oc_currency VALUES ('4', 'Viet Nam Dong', 'VND', '', 'đ', '', '1.00000000', '1', '2013-08-07 19:22:09');
 
 -- ----------------------------
 -- Table structure for `oc_customer`
@@ -1006,7 +1044,7 @@ CREATE TABLE `oc_customer` (
 -- ----------------------------
 -- Records of oc_customer
 -- ----------------------------
-INSERT INTO oc_customer VALUES ('1', '0', 'Kenzy', 'Nguyen', 'thanhtin238@gmail.com', '01682827320', '', 'e1eca011eb2e8ae5a91a0a3b573c6be00c95f8f4', '3ab9e1d26', 'a:0:{}', '', '0', '1', '1', '127.0.0.1', '1', '1', '', '2013-07-19 23:00:10');
+INSERT INTO oc_customer VALUES ('1', '0', 'Kenzy', 'Nguyen', 'thanhtin238@gmail.com', '01682827320', '', 'e1eca011eb2e8ae5a91a0a3b573c6be00c95f8f4', '3ab9e1d26', 'a:1:{s:371:\"50:YTo5OntpOjIzMjtzOjI6IjIzIjtpOjIzMTtzOjI6IjIwIjtpOjIzNDthOjE6e2k6MDtzOjI6IjI2Ijt9aToyMzA7czo0OiJ0ZXN0IjtpOjIzMztzOjk6ImFzZGFzZGFzZCI7aToyMjg7czo4ODoiRklOZVVlVlc4a3VZSkVxNXdHVWZmaFV1cXJpMEJDb2VhX2xFTG1ZdjgtdGtPYjB0T2I1VG1jQTV5eTZEUW8zZWttWE9CcXlrRDc4dktlSDV0c29hencsLCI7aToyMjk7czoxMDoiMjAxMS0wMi0yMCI7aToyMzU7czo1OiIyMjoyNSI7aToyMzY7czoxNjoiMjAxMS0wMi0yMCAyMjoyNSI7fQ==\";i:2;}', '', '0', '1', '1', '127.0.0.1', '1', '1', '', '2013-07-19 23:00:10');
 
 -- ----------------------------
 -- Table structure for `oc_customer_ban_ip`
@@ -1246,6 +1284,35 @@ CREATE TABLE `oc_custom_field_value_description` (
 -- ----------------------------
 
 -- ----------------------------
+-- Table structure for `oc_deal_zone`
+-- ----------------------------
+DROP TABLE IF EXISTS `oc_deal_zone`;
+CREATE TABLE `oc_deal_zone` (
+  `zone_id` int(11) NOT NULL AUTO_INCREMENT,
+  `country_id` int(11) NOT NULL,
+  `code` varchar(32) COLLATE utf8_unicode_ci NOT NULL,
+  `name` varchar(128) COLLATE utf8_unicode_ci NOT NULL,
+  `meta_description` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `meta_keyword` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `sort_order` int(3) NOT NULL DEFAULT '0',
+  `status` tinyint(1) NOT NULL DEFAULT '1',
+  PRIMARY KEY (`zone_id`)
+) ENGINE=MyISAM AUTO_INCREMENT=10 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+-- ----------------------------
+-- Records of oc_deal_zone
+-- ----------------------------
+INSERT INTO oc_deal_zone VALUES ('1', '230', 'HCM', 'Thành Phố Hồ Chí Minh', 'Thành Phố Hồ Chí Minh', 'thanh pho ho chi minh , Thành Phố Hồ Chí Minh', '1', '1');
+INSERT INTO oc_deal_zone VALUES ('2', '230', 'HN', 'Hà Nội', 'meta_description', 'ha noi , meta_keyword', '2', '1');
+INSERT INTO oc_deal_zone VALUES ('3', '230', 'DN', 'Đà Nẵng', 'meta_description', 'da nang , meta_keyword', '5', '0');
+INSERT INTO oc_deal_zone VALUES ('4', '230', 'CT', 'Cần Thơ', 'meta_description', 'can tho , meta_keyword', '6', '0');
+INSERT INTO oc_deal_zone VALUES ('5', '230', 'DN', 'Đồng Nai', 'meta_description', 'dong nai , meta_keyword', '3', '0');
+INSERT INTO oc_deal_zone VALUES ('6', '230', 'HP', 'Hải Phòng', 'meta_description', 'hai phong , meta_keyword', '4', '0');
+INSERT INTO oc_deal_zone VALUES ('7', '230', 'VT', 'Vũng Tàu', 'meta_description', 'vung tau , meta_keyword', '9', '0');
+INSERT INTO oc_deal_zone VALUES ('8', '230', 'BD', 'Bình Dương', 'meta_description', 'binh duong , meta_keyword', '8', '0');
+INSERT INTO oc_deal_zone VALUES ('9', '230', 'NT', 'Nha Trang', 'meta_description', 'nha trang , meta_keyword', '7', '0');
+
+-- ----------------------------
 -- Table structure for `oc_download`
 -- ----------------------------
 DROP TABLE IF EXISTS `oc_download`;
@@ -1286,7 +1353,7 @@ CREATE TABLE `oc_extension` (
   `type` varchar(32) NOT NULL,
   `code` varchar(32) NOT NULL,
   PRIMARY KEY (`extension_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=439 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=441 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_extension
@@ -1317,6 +1384,8 @@ INSERT INTO oc_extension VALUES ('434', 'feed', 'google_base');
 INSERT INTO oc_extension VALUES ('436', 'module', 'information');
 INSERT INTO oc_extension VALUES ('437', 'module', 'latest');
 INSERT INTO oc_extension VALUES ('438', 'module', 'vqmod_manager');
+INSERT INTO oc_extension VALUES ('439', 'module', 'filter');
+INSERT INTO oc_extension VALUES ('440', 'module', 'deal');
 
 -- ----------------------------
 -- Table structure for `oc_filter`
@@ -1327,11 +1396,15 @@ CREATE TABLE `oc_filter` (
   `filter_group_id` int(11) NOT NULL,
   `sort_order` int(3) NOT NULL,
   PRIMARY KEY (`filter_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_filter
 -- ----------------------------
+INSERT INTO oc_filter VALUES ('1', '1', '1');
+INSERT INTO oc_filter VALUES ('2', '1', '2');
+INSERT INTO oc_filter VALUES ('3', '2', '1');
+INSERT INTO oc_filter VALUES ('4', '2', '2');
 
 -- ----------------------------
 -- Table structure for `oc_filter_description`
@@ -1348,6 +1421,14 @@ CREATE TABLE `oc_filter_description` (
 -- ----------------------------
 -- Records of oc_filter_description
 -- ----------------------------
+INSERT INTO oc_filter_description VALUES ('1', '2', '1', 'Ăn uống');
+INSERT INTO oc_filter_description VALUES ('1', '1', '1', 'Eat');
+INSERT INTO oc_filter_description VALUES ('2', '2', '1', 'Nhậu');
+INSERT INTO oc_filter_description VALUES ('2', '1', '1', 'Drink beer');
+INSERT INTO oc_filter_description VALUES ('3', '2', '2', 'Dây nịt');
+INSERT INTO oc_filter_description VALUES ('3', '1', '2', 'Belt');
+INSERT INTO oc_filter_description VALUES ('4', '2', '2', 'Nước hoa');
+INSERT INTO oc_filter_description VALUES ('4', '1', '2', 'Flower Smell');
 
 -- ----------------------------
 -- Table structure for `oc_filter_group`
@@ -1357,11 +1438,13 @@ CREATE TABLE `oc_filter_group` (
   `filter_group_id` int(11) NOT NULL AUTO_INCREMENT,
   `sort_order` int(3) NOT NULL,
   PRIMARY KEY (`filter_group_id`)
-) ENGINE=MyISAM DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_filter_group
 -- ----------------------------
+INSERT INTO oc_filter_group VALUES ('1', '1');
+INSERT INTO oc_filter_group VALUES ('2', '2');
 
 -- ----------------------------
 -- Table structure for `oc_filter_group_description`
@@ -1377,6 +1460,10 @@ CREATE TABLE `oc_filter_group_description` (
 -- ----------------------------
 -- Records of oc_filter_group_description
 -- ----------------------------
+INSERT INTO oc_filter_group_description VALUES ('1', '2', 'Nhà hàng');
+INSERT INTO oc_filter_group_description VALUES ('1', '1', 'Restaurant');
+INSERT INTO oc_filter_group_description VALUES ('2', '2', 'Thời trang');
+INSERT INTO oc_filter_group_description VALUES ('2', '1', 'Fashion');
 
 -- ----------------------------
 -- Table structure for `oc_geo_zone`
@@ -1495,7 +1582,7 @@ CREATE TABLE `oc_language` (
 -- ----------------------------
 -- Records of oc_language
 -- ----------------------------
-INSERT INTO oc_language VALUES ('1', 'English', 'en', 'en_US.UTF-8,en_US,en-gb,english', 'gb.png', 'english', 'english', '2', '1');
+INSERT INTO oc_language VALUES ('1', 'English', 'en', 'en_US.UTF-8,en_US,en-gb,english', 'gb.png', 'english', 'english', '2', '0');
 INSERT INTO oc_language VALUES ('2', 'Vietnamese', 'vi', 'vi_VN.UTF-8,vi_VN,vi-vn,vietnamese', 'vn.png', 'vietnamese', 'vietnamese', '1', '1');
 
 -- ----------------------------
@@ -1834,7 +1921,7 @@ INSERT INTO oc_option VALUES ('9', 'time', '8');
 INSERT INTO oc_option VALUES ('10', 'datetime', '9');
 INSERT INTO oc_option VALUES ('11', 'select', '1');
 INSERT INTO oc_option VALUES ('12', 'date', '1');
-INSERT INTO oc_option VALUES ('13', 'checkbox', '1');
+INSERT INTO oc_option VALUES ('13', 'image', '1');
 
 -- ----------------------------
 -- Table structure for `oc_option_description`
@@ -1904,8 +1991,8 @@ INSERT INTO oc_option_value VALUES ('24', '2', '', '2');
 INSERT INTO oc_option_value VALUES ('46', '11', '', '1');
 INSERT INTO oc_option_value VALUES ('47', '11', '', '2');
 INSERT INTO oc_option_value VALUES ('48', '11', '', '3');
+INSERT INTO oc_option_value VALUES ('50', '13', 'data/demo/apple_logo.jpg', '2');
 INSERT INTO oc_option_value VALUES ('49', '13', 'no_image.jpg', '1');
-INSERT INTO oc_option_value VALUES ('50', '13', 'no_image.jpg', '2');
 
 -- ----------------------------
 -- Table structure for `oc_option_value_description`
@@ -1950,10 +2037,10 @@ INSERT INTO oc_option_value_description VALUES ('24', '2', '2', 'Checkbox 2');
 INSERT INTO oc_option_value_description VALUES ('48', '2', '11', 'Large');
 INSERT INTO oc_option_value_description VALUES ('47', '2', '11', 'Medium');
 INSERT INTO oc_option_value_description VALUES ('46', '2', '11', 'Small');
+INSERT INTO oc_option_value_description VALUES ('50', '1', '13', 'Blue');
+INSERT INTO oc_option_value_description VALUES ('50', '2', '13', 'Màu xanh');
 INSERT INTO oc_option_value_description VALUES ('49', '2', '13', 'Màu đỏ');
 INSERT INTO oc_option_value_description VALUES ('49', '1', '13', 'Red');
-INSERT INTO oc_option_value_description VALUES ('50', '2', '13', 'Màu xanh');
-INSERT INTO oc_option_value_description VALUES ('50', '1', '13', 'Blue');
 
 -- ----------------------------
 -- Table structure for `oc_order`
@@ -2019,13 +2106,14 @@ CREATE TABLE `oc_order` (
   `date_added` datetime NOT NULL,
   `date_modified` datetime NOT NULL,
   PRIMARY KEY (`order_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_order
 -- ----------------------------
 INSERT INTO oc_order VALUES ('1', '1', 'INV-2013-00', '0', 'Your Store', 'http://opencart.thanhtin.nguyen/', '0', '1', 'Tín', 'Nguyễn Thanh', 'thanhtin238@gmail.com', '01682827320', '', 'Tín', 'Nguyễn Thanh', '', '', '', '40/6c KDC Trung Son', '', 'HCM', '', 'Viet Nam', '230', 'Ho Chi Minh City', '3780', '', 'Miễn phí', 'free_checkout', 'Tín', 'Nguyễn Thanh', '', '40/6c KDC Trung Son', '', 'HCM', '', 'Viet Nam', '230', 'Ho Chi Minh City', '3780', '', 'Phí vận chuyển cố định', 'flat.flat', '', '0.0000', '1', '0', '0.0000', '2', '4', 'VND', '21222.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.72 Safari/537.36', 'en-US,en;q=0.8', '2013-07-22 22:59:43', '2013-07-22 22:59:46');
 INSERT INTO oc_order VALUES ('2', '0', 'INV-2013-00', '0', 'Your Store', 'http://opencart.thanhtin.nguyen/', '0', '1', 'Vinh', 'Nguyen', 'vinhnguyen@gmail.com', '123123123', '', 'Vinh', 'Nguyen', '', '', '', '40/6c', '', 'HCM', '', 'Viet Nam', '230', 'Ho Chi Minh City', '3780', '', 'Miễn phí', 'free_checkout', 'Vinh', 'Nguyen', '', '40/6c', '', 'HCM', '', 'Viet Nam', '230', 'Ho Chi Minh City', '3780', '', 'Phí vận chuyển cố định', 'flat.flat', '', '0.0000', '15', '0', '0.0000', '2', '4', 'VND', '21222.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.72 Safari/537.36', 'en-US,en;q=0.8', '2013-07-22 23:20:16', '2013-07-22 23:23:37');
+INSERT INTO oc_order VALUES ('3', '0', 'INV-2013-00', '0', 'Săn hàng giá rẻ mỗi ngày', 'http://opencart.thanhtin.nguyen/', '1', '1', 'Kenzy', 'Nguyen', 'thanhtin238@gmail.com', '01682827320', '', 'Kenzy', 'Nguyen', '', '', '', '375/4A Phạm Hữu Lầu', '', 'Tp. HCM', '94000', 'Viet Nam', '230', 'Ho Chi Minh City', '3780', '', 'Miễn phí', 'free_checkout', 'Kenzy', 'Nguyen', '', '375/4A Phạm Hữu Lầu', '', 'Tp. HCM', '94000', 'Viet Nam', '230', 'Ho Chi Minh City', '3780', '', 'Phí vận chuyển cố định', 'flat.flat', '', '0.0000', '0', '0', '0.0000', '2', '2', 'USD', '1.00000000', '127.0.0.1', '', 'Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/28.0.1500.95 Safari/537.36', 'en-US,en;q=0.8', '2013-08-07 10:31:58', '2013-08-07 10:31:58');
 
 -- ----------------------------
 -- Table structure for `oc_order_download`
@@ -2163,7 +2251,7 @@ CREATE TABLE `oc_order_option` (
   `value` text NOT NULL,
   `type` varchar(32) NOT NULL,
   PRIMARY KEY (`order_option_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=14 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_order_option
@@ -2172,6 +2260,15 @@ INSERT INTO oc_order_option VALUES ('3', '2', '3', '225', '0', 'Delivery Date', 
 INSERT INTO oc_order_option VALUES ('2', '2', '2', '227', '18', 'Màu sắc', 'Màu đỏ', 'checkbox');
 INSERT INTO oc_order_option VALUES ('1', '2', '2', '225', '0', 'Delivery Date', '2011-04-22', 'date');
 INSERT INTO oc_order_option VALUES ('4', '2', '3', '227', '17', 'Màu sắc', 'Màu xanh', 'checkbox');
+INSERT INTO oc_order_option VALUES ('5', '3', '4', '232', '23', 'Select', 'Red', 'select');
+INSERT INTO oc_order_option VALUES ('6', '3', '4', '231', '20', 'Radio', 'Small', 'radio');
+INSERT INTO oc_order_option VALUES ('7', '3', '4', '234', '26', 'Checkbox', 'Checkbox 1', 'checkbox');
+INSERT INTO oc_order_option VALUES ('8', '3', '4', '230', '0', 'Text', 'test', 'text');
+INSERT INTO oc_order_option VALUES ('9', '3', '4', '233', '0', 'Textarea', 'asdasdasd', 'textarea');
+INSERT INTO oc_order_option VALUES ('10', '3', '4', '228', '0', 'File', 'navigation.jpg.37864cd5235a4b9fff19f2c5986f8175', 'file');
+INSERT INTO oc_order_option VALUES ('11', '3', '4', '229', '0', 'Date', '2011-02-20', 'date');
+INSERT INTO oc_order_option VALUES ('12', '3', '4', '235', '0', 'Time', '22:25', 'time');
+INSERT INTO oc_order_option VALUES ('13', '3', '4', '236', '0', 'Date &amp; Time', '2011-02-20 22:25', 'datetime');
 
 -- ----------------------------
 -- Table structure for `oc_order_product`
@@ -2189,7 +2286,7 @@ CREATE TABLE `oc_order_product` (
   `tax` decimal(15,4) NOT NULL DEFAULT '0.0000',
   `reward` int(8) NOT NULL,
   PRIMARY KEY (`order_product_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_order_product
@@ -2197,6 +2294,7 @@ CREATE TABLE `oc_order_product` (
 INSERT INTO oc_order_product VALUES ('1', '1', '40', 'iPhone', 'product 11', '1', '101.0000', '101.0000', '0.0000', '0');
 INSERT INTO oc_order_product VALUES ('3', '2', '47', 'HP LP3065', 'Product 21', '10', '100.0000', '1000.0000', '0.0000', '3000');
 INSERT INTO oc_order_product VALUES ('2', '2', '47', 'HP LP3065', 'Product 21', '5', '100.0000', '500.0000', '0.0000', '1500');
+INSERT INTO oc_order_product VALUES ('4', '3', '50', 'Apple Cinema 30&quot;', 'Product 15', '2', '114.0000', '228.0000', '0.0000', '200');
 
 -- ----------------------------
 -- Table structure for `oc_order_status`
@@ -2298,8 +2396,11 @@ CREATE TABLE `oc_product` (
   `jan` varchar(13) NOT NULL,
   `isbn` varchar(13) NOT NULL,
   `mpn` varchar(64) NOT NULL,
+  `zone_id` int(11) NOT NULL,
   `location` varchar(128) NOT NULL,
+  `quantity_entered` int(4) NOT NULL DEFAULT '0',
   `quantity` int(4) NOT NULL DEFAULT '0',
+  `quantity_sold` int(4) NOT NULL DEFAULT '0',
   `stock_status_id` int(11) NOT NULL,
   `image` varchar(255) DEFAULT NULL,
   `manufacturer_id` int(11) NOT NULL,
@@ -2327,25 +2428,25 @@ CREATE TABLE `oc_product` (
 -- ----------------------------
 -- Records of oc_product
 -- ----------------------------
-INSERT INTO oc_product VALUES ('28', 'Product 1', '', '', '', '', '', '', '', '939', '7', 'data/demo/htc_touch_hd_1.jpg', '5', '1', '100.0000', '200', '9', '2009-02-03', '146.40000000', '2', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '0', '1', '2009-02-03 16:06:50', '2011-09-30 01:05:39', '0');
-INSERT INTO oc_product VALUES ('29', 'Product 2', '', '', '', '', '', '', '', '999', '6', 'data/demo/palm_treo_pro_1.jpg', '6', '1', '279.9900', '0', '9', '2009-02-03', '133.00000000', '2', '0.00000000', '0.00000000', '0.00000000', '3', '1', '1', '0', '1', '2009-02-03 16:42:17', '2011-09-30 01:06:08', '0');
-INSERT INTO oc_product VALUES ('31', 'Product 4', '', '', '', '', '', '', '', '1000', '6', 'data/demo/nikon_d300_1.jpg', '0', '1', '80.0000', '0', '9', '2009-02-03', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '3', '1', '1', '0', '1', '2009-02-03 17:00:10', '2011-09-30 01:06:00', '0');
-INSERT INTO oc_product VALUES ('32', 'Product 5', '', '', '', '', '', '', '', '999', '6', 'data/demo/ipod_touch_1.jpg', '8', '1', '100.0000', '0', '9', '2009-02-03', '5.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '0', '1', '2009-02-03 17:07:26', '2011-09-30 01:07:22', '0');
-INSERT INTO oc_product VALUES ('33', 'Product 6', '', '', '', '', '', '', '', '1000', '6', 'data/demo/samsung_syncmaster_941bw.jpg', '0', '1', '200.0000', '0', '9', '2009-02-03', '5.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-03 17:08:31', '2011-09-30 01:06:29', '0');
-INSERT INTO oc_product VALUES ('34', 'Product 7', '', '', '', '', '', '', '', '1000', '6', 'data/demo/ipod_shuffle_1.jpg', '8', '1', '100.0000', '0', '9', '2009-02-03', '5.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-03 18:07:54', '2011-09-30 01:07:17', '0');
-INSERT INTO oc_product VALUES ('35', 'Product 8', '', '', '', '', '', '', '', '1000', '5', '', '0', '0', '100.0000', '0', '9', '2009-02-03', '5.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '0', '1', '2009-02-03 18:08:31', '2011-09-30 01:06:17', '0');
-INSERT INTO oc_product VALUES ('36', 'Product 9', '', '', '', '', '', '', '', '994', '6', 'data/demo/ipod_nano_1.jpg', '8', '0', '100.0000', '100', '9', '2009-02-03', '5.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-03 18:09:19', '2011-09-30 01:07:12', '0');
-INSERT INTO oc_product VALUES ('40', 'product 11', '', '', '', '', '', '', '', '969', '5', 'data/demo/iphone_1.jpg', '8', '1', '101.0000', '0', '9', '2009-02-03', '10.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '0', '1', '2009-02-03 21:07:12', '2011-09-30 01:06:53', '7');
-INSERT INTO oc_product VALUES ('41', 'Product 14', '', '', '', '', '', '', '', '977', '5', 'data/demo/imac_1.jpg', '8', '1', '100.0000', '0', '9', '2009-02-03', '5.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '0', '1', '2009-02-03 21:07:26', '2011-09-30 01:06:44', '2');
-INSERT INTO oc_product VALUES ('43', 'Product 16', '', '', '', '', '', '', '', '929', '5', 'data/demo/macbook_1.jpg', '8', '0', '500.0000', '0', '9', '2009-02-03', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-03 21:07:49', '2013-08-04 12:55:08', '25');
-INSERT INTO oc_product VALUES ('44', 'Product 17', '', '', '', '', '', '', '', '1000', '5', 'data/demo/macbook_air_1.jpg', '8', '1', '1000.0000', '0', '9', '2009-02-03', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-03 21:08:00', '2011-09-30 01:05:53', '0');
-INSERT INTO oc_product VALUES ('45', 'Product 18', '', '', '', '', '', '', '', '998', '5', 'data/demo/macbook_pro_1.jpg', '8', '1', '2000.0000', '0', '100', '2009-02-03', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-03 21:08:17', '2011-09-15 22:22:01', '0');
-INSERT INTO oc_product VALUES ('46', 'Product 19', '', '', '', '', '', '', '', '1000', '5', 'data/demo/sony_vaio_1.jpg', '10', '1', '1000.0000', '0', '9', '2009-02-03', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-03 21:08:29', '2011-09-30 01:06:39', '9');
-INSERT INTO oc_product VALUES ('47', 'Product 21', '', '', '', '', '', '', '', '1000', '5', 'data/demo/hp_1.jpg', '7', '1', '100.0000', '400', '9', '2009-02-03', '1.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '0', '1', '0', '1', '2009-02-03 21:08:40', '2013-07-22 23:12:19', '7');
-INSERT INTO oc_product VALUES ('48', 'product 20', 'test 1', '', '', '', '', '', 'test 2', '995', '5', 'data/demo/ipod_classic_1.jpg', '8', '1', '100.0000', '0', '9', '2009-02-08', '1.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-08 17:21:51', '2011-09-30 01:07:06', '4');
-INSERT INTO oc_product VALUES ('49', 'SAM1', '', '', '', '', '', '', '', '0', '8', 'data/demo/samsung_tab_1.jpg', '0', '1', '199.9900', '0', '9', '2011-04-25', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2011-04-26 08:57:34', '2011-09-30 01:06:23', '0');
-INSERT INTO oc_product VALUES ('50', 'Product 15', '', '', '', '', '', '', '', '990', '5', 'data/demo/apple_cinema_30.jpg', '8', '1', '100.0000', '400', '9', '2009-02-04', '12.50000000', '1', '1.00000000', '2.00000000', '3.00000000', '1', '1', '2', '0', '1', '2013-07-23 00:23:52', '2013-08-03 18:34:45', '35');
-INSERT INTO oc_product VALUES ('51', 'Product 3', '', '', '', '', '', '', '', '7', '6', 'data/demo/canon_eos_5d_1.jpg', '9', '1', '100.0000', '0', '9', '2009-02-03', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '0', '1', '2013-07-23 00:23:52', '2013-08-04 20:44:35', '5');
+INSERT INTO oc_product VALUES ('28', 'Product 1', '', '', '', '', '', '', '0', '', '0', '939', '0', '7', 'data/demo/htc_touch_hd_1.jpg', '5', '1', '100.0000', '200', '9', '2009-02-03', '146.40000000', '2', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '0', '1', '2009-02-03 16:06:50', '2011-09-30 01:05:39', '0');
+INSERT INTO oc_product VALUES ('29', 'Product 2', '', '', '', '', '', '', '0', '', '0', '999', '0', '6', 'data/demo/palm_treo_pro_1.jpg', '6', '1', '279.9900', '0', '9', '2009-02-03', '133.00000000', '2', '0.00000000', '0.00000000', '0.00000000', '3', '1', '1', '0', '1', '2009-02-03 16:42:17', '2011-09-30 01:06:08', '0');
+INSERT INTO oc_product VALUES ('31', 'Product 4', '', '', '', '', '', '', '0', '', '0', '1000', '0', '6', 'data/demo/nikon_d300_1.jpg', '0', '1', '80.0000', '0', '9', '2009-02-03', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '3', '1', '1', '0', '1', '2009-02-03 17:00:10', '2011-09-30 01:06:00', '0');
+INSERT INTO oc_product VALUES ('32', 'Product 5', '', '', '', '', '', '', '0', '', '0', '999', '0', '6', 'data/demo/ipod_touch_1.jpg', '8', '1', '100.0000', '0', '9', '2009-02-03', '5.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '0', '1', '2009-02-03 17:07:26', '2011-09-30 01:07:22', '0');
+INSERT INTO oc_product VALUES ('33', 'Product 6', '', '', '', '', '', '', '0', '', '0', '1000', '0', '6', 'data/demo/samsung_syncmaster_941bw.jpg', '0', '1', '200.0000', '0', '9', '2009-02-03', '5.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-03 17:08:31', '2011-09-30 01:06:29', '0');
+INSERT INTO oc_product VALUES ('34', 'Product 7', '', '', '', '', '', '', '0', '', '0', '1000', '0', '6', 'data/demo/ipod_shuffle_1.jpg', '8', '1', '100.0000', '0', '9', '2009-02-03', '5.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-03 18:07:54', '2011-09-30 01:07:17', '0');
+INSERT INTO oc_product VALUES ('35', 'Product 8', '', '', '', '', '', '', '0', '', '0', '1000', '0', '5', '', '0', '0', '100.0000', '0', '9', '2009-02-03', '5.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '0', '1', '2009-02-03 18:08:31', '2011-09-30 01:06:17', '0');
+INSERT INTO oc_product VALUES ('36', 'Product 9', '', '', '', '', '', '', '0', '', '0', '994', '0', '6', 'data/demo/ipod_nano_1.jpg', '8', '0', '100.0000', '100', '9', '2009-02-03', '5.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-03 18:09:19', '2011-09-30 01:07:12', '0');
+INSERT INTO oc_product VALUES ('40', 'product 11', '', '', '', '', '', '', '0', '', '0', '969', '0', '5', 'data/demo/iphone_1.jpg', '8', '1', '101.0000', '0', '9', '2009-02-03', '10.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '0', '1', '2009-02-03 21:07:12', '2011-09-30 01:06:53', '7');
+INSERT INTO oc_product VALUES ('41', 'Product 14', '', '', '', '', '', '', '0', '', '0', '977', '0', '5', 'data/demo/imac_1.jpg', '8', '1', '100.0000', '0', '9', '2009-02-03', '5.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '0', '1', '2009-02-03 21:07:26', '2011-09-30 01:06:44', '2');
+INSERT INTO oc_product VALUES ('43', 'Product 16', '', '', '', '', '', '', '0', '', '0', '929', '0', '5', 'data/demo/macbook_1.jpg', '8', '0', '500.0000', '0', '9', '2009-02-03', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-03 21:07:49', '2013-08-04 12:55:08', '25');
+INSERT INTO oc_product VALUES ('44', 'Product 17', '', '', '', '', '', '', '0', '', '0', '1000', '0', '5', 'data/demo/macbook_air_1.jpg', '8', '1', '1000.0000', '0', '9', '2009-02-03', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-03 21:08:00', '2011-09-30 01:05:53', '0');
+INSERT INTO oc_product VALUES ('45', 'Product 18', '', '', '', '', '', '', '0', '', '0', '998', '0', '5', 'data/demo/macbook_pro_1.jpg', '8', '1', '2000.0000', '0', '100', '2009-02-03', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-03 21:08:17', '2011-09-15 22:22:01', '0');
+INSERT INTO oc_product VALUES ('46', 'Product 19', '', '', '', '', '', '', '0', '', '0', '1000', '0', '5', 'data/demo/sony_vaio_1.jpg', '10', '1', '1000.0000', '0', '9', '2009-02-03', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-03 21:08:29', '2011-09-30 01:06:39', '9');
+INSERT INTO oc_product VALUES ('47', 'Product 21', '', '', '', '', '', '', '0', '', '0', '1000', '0', '5', 'data/demo/hp_1.jpg', '7', '1', '100.0000', '400', '9', '2009-02-03', '1.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '0', '1', '0', '1', '2009-02-03 21:08:40', '2013-07-22 23:12:19', '8');
+INSERT INTO oc_product VALUES ('48', 'product 20', 'test 1', '', '', '', '', '', '0', 'test 2', '0', '995', '0', '5', 'data/demo/ipod_classic_1.jpg', '8', '1', '100.0000', '0', '9', '2009-02-08', '1.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '2', '1', '1', '0', '1', '2009-02-08 17:21:51', '2011-09-30 01:07:06', '4');
+INSERT INTO oc_product VALUES ('49', 'SAM1', '', '', '', '', '', '', '0', '', '0', '0', '0', '8', 'data/demo/samsung_tab_1.jpg', '0', '1', '199.9900', '0', '9', '2011-04-25', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '1', '1', '2011-04-26 08:57:34', '2011-09-30 01:06:23', '2');
+INSERT INTO oc_product VALUES ('50', 'Product 15', '', '', '', '', '', '', '1', '', '200000', '990', '12', '5', 'data/demo/apple_cinema_30.jpg', '8', '1', '100.0000', '400', '9', '2009-02-04', '12.50000000', '1', '1.00000000', '2.00000000', '3.00000000', '1', '1', '2', '0', '1', '2013-07-23 00:23:52', '2013-08-07 18:50:09', '56');
+INSERT INTO oc_product VALUES ('51', 'Product 3', '', '', '', '', '', '', '0', '', '0', '7', '0', '6', 'data/demo/canon_eos_5d_1.jpg', '9', '1', '100.0000', '0', '9', '2009-02-03', '0.00000000', '1', '0.00000000', '0.00000000', '0.00000000', '1', '1', '1', '0', '1', '2013-07-23 00:23:52', '2013-08-04 20:44:35', '6');
 
 -- ----------------------------
 -- Table structure for `oc_product_attribute`
@@ -2369,8 +2470,6 @@ INSERT INTO oc_product_attribute VALUES ('47', '2', '2', '4');
 INSERT INTO oc_product_attribute VALUES ('43', '4', '1', '8gb');
 INSERT INTO oc_product_attribute VALUES ('47', '4', '2', '16GB');
 INSERT INTO oc_product_attribute VALUES ('47', '4', '1', '16GB');
-INSERT INTO oc_product_attribute VALUES ('50', '3', '1', '100mhz');
-INSERT INTO oc_product_attribute VALUES ('50', '3', '2', '100mhz');
 INSERT INTO oc_product_attribute VALUES ('43', '4', '2', '8gb');
 
 -- ----------------------------
@@ -2447,14 +2546,14 @@ CREATE TABLE `oc_product_discount` (
   `date_end` date NOT NULL DEFAULT '0000-00-00',
   PRIMARY KEY (`product_discount_id`),
   KEY `product_id` (`product_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=465 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=507 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_product_discount
 -- ----------------------------
-INSERT INTO oc_product_discount VALUES ('464', '50', '1', '30', '1', '66.0000', '0000-00-00', '0000-00-00');
-INSERT INTO oc_product_discount VALUES ('463', '50', '1', '20', '1', '77.0000', '0000-00-00', '0000-00-00');
-INSERT INTO oc_product_discount VALUES ('462', '50', '1', '10', '1', '88.0000', '0000-00-00', '0000-00-00');
+INSERT INTO oc_product_discount VALUES ('506', '50', '1', '30', '1', '66.0000', '0000-00-00', '0000-00-00');
+INSERT INTO oc_product_discount VALUES ('505', '50', '1', '20', '1', '77.0000', '0000-00-00', '0000-00-00');
+INSERT INTO oc_product_discount VALUES ('504', '50', '1', '10', '1', '88.0000', '0000-00-00', '0000-00-00');
 
 -- ----------------------------
 -- Table structure for `oc_product_filter`
@@ -2469,6 +2568,8 @@ CREATE TABLE `oc_product_filter` (
 -- ----------------------------
 -- Records of oc_product_filter
 -- ----------------------------
+INSERT INTO oc_product_filter VALUES ('50', '1');
+INSERT INTO oc_product_filter VALUES ('50', '2');
 
 -- ----------------------------
 -- Table structure for `oc_product_image`
@@ -2480,7 +2581,7 @@ CREATE TABLE `oc_product_image` (
   `image` varchar(255) DEFAULT NULL,
   `sort_order` int(3) NOT NULL DEFAULT '0',
   PRIMARY KEY (`product_image_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=2408 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=2478 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_product_image
@@ -2511,7 +2612,7 @@ INSERT INTO oc_product_image VALUES ('1991', '48', 'data/demo/ipod_classic_4.jpg
 INSERT INTO oc_product_image VALUES ('1990', '48', 'data/demo/ipod_classic_3.jpg', '0');
 INSERT INTO oc_product_image VALUES ('1981', '40', 'data/demo/iphone_2.jpg', '0');
 INSERT INTO oc_product_image VALUES ('1980', '40', 'data/demo/iphone_5.jpg', '0');
-INSERT INTO oc_product_image VALUES ('2397', '50', 'data/demo/canon_eos_5d_1.jpg', '0');
+INSERT INTO oc_product_image VALUES ('2477', '50', 'data/demo/canon_eos_5d_1.jpg', '0');
 INSERT INTO oc_product_image VALUES ('2362', '47', 'data/demo/hp_3.jpg', '0');
 INSERT INTO oc_product_image VALUES ('2034', '28', 'data/demo/htc_touch_hd_3.jpg', '0');
 INSERT INTO oc_product_image VALUES ('2350', '41', 'data/demo/imac_2.jpg', '0');
@@ -2540,10 +2641,10 @@ INSERT INTO oc_product_image VALUES ('2325', '49', 'data/demo/samsung_tab_5.jpg'
 INSERT INTO oc_product_image VALUES ('2324', '49', 'data/demo/samsung_tab_4.jpg', '0');
 INSERT INTO oc_product_image VALUES ('2323', '49', 'data/demo/samsung_tab_3.jpg', '0');
 INSERT INTO oc_product_image VALUES ('2322', '49', 'data/demo/samsung_tab_2.jpg', '0');
-INSERT INTO oc_product_image VALUES ('2396', '50', 'data/demo/compaq_presario.jpg', '0');
-INSERT INTO oc_product_image VALUES ('2395', '50', 'data/demo/hp_1.jpg', '0');
-INSERT INTO oc_product_image VALUES ('2394', '50', 'data/demo/canon_logo.jpg', '0');
-INSERT INTO oc_product_image VALUES ('2393', '50', 'data/demo/canon_eos_5d_2.jpg', '0');
+INSERT INTO oc_product_image VALUES ('2476', '50', 'data/demo/compaq_presario.jpg', '0');
+INSERT INTO oc_product_image VALUES ('2475', '50', 'data/demo/hp_1.jpg', '0');
+INSERT INTO oc_product_image VALUES ('2474', '50', 'data/demo/canon_logo.jpg', '0');
+INSERT INTO oc_product_image VALUES ('2473', '50', 'data/demo/canon_eos_5d_2.jpg', '0');
 INSERT INTO oc_product_image VALUES ('2407', '51', 'data/demo/canon_eos_5d_2.jpg', '0');
 INSERT INTO oc_product_image VALUES ('2406', '51', 'data/demo/canon_eos_5d_3.jpg', '0');
 
@@ -2558,23 +2659,16 @@ CREATE TABLE `oc_product_option` (
   `option_value` text NOT NULL,
   `required` tinyint(1) NOT NULL,
   PRIMARY KEY (`product_option_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=238 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=239 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_product_option
 -- ----------------------------
 INSERT INTO oc_product_option VALUES ('224', '35', '11', '', '1');
 INSERT INTO oc_product_option VALUES ('225', '47', '12', '2011-04-22', '1');
-INSERT INTO oc_product_option VALUES ('229', '50', '8', '2011-02-20', '1');
-INSERT INTO oc_product_option VALUES ('228', '50', '7', '', '1');
 INSERT INTO oc_product_option VALUES ('227', '47', '13', '', '1');
-INSERT INTO oc_product_option VALUES ('230', '50', '4', 'test', '1');
-INSERT INTO oc_product_option VALUES ('231', '50', '1', '', '1');
+INSERT INTO oc_product_option VALUES ('238', '50', '13', '', '1');
 INSERT INTO oc_product_option VALUES ('232', '50', '5', '', '1');
-INSERT INTO oc_product_option VALUES ('233', '50', '6', '', '1');
-INSERT INTO oc_product_option VALUES ('234', '50', '2', '', '1');
-INSERT INTO oc_product_option VALUES ('235', '50', '9', '22:25', '1');
-INSERT INTO oc_product_option VALUES ('236', '50', '10', '2011-02-20 22:25', '1');
 INSERT INTO oc_product_option VALUES ('237', '51', '5', '', '1');
 
 -- ----------------------------
@@ -2596,7 +2690,7 @@ CREATE TABLE `oc_product_option_value` (
   `weight` decimal(15,8) NOT NULL,
   `weight_prefix` varchar(1) NOT NULL,
   PRIMARY KEY (`product_option_value_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=32 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=34 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_product_option_value
@@ -2604,19 +2698,14 @@ CREATE TABLE `oc_product_option_value` (
 INSERT INTO oc_product_option_value VALUES ('12', '224', '35', '11', '46', '0', '1', '5.0000', '+', '0', '+', '0.00000000', '+');
 INSERT INTO oc_product_option_value VALUES ('13', '224', '35', '11', '47', '10', '1', '10.0000', '+', '0', '+', '0.00000000', '+');
 INSERT INTO oc_product_option_value VALUES ('14', '224', '35', '11', '48', '15', '1', '15.0000', '+', '0', '+', '0.00000000', '+');
-INSERT INTO oc_product_option_value VALUES ('21', '231', '50', '1', '31', '146', '1', '20.0000', '+', '2', '-', '20.00000000', '+');
-INSERT INTO oc_product_option_value VALUES ('20', '231', '50', '1', '32', '96', '1', '10.0000', '+', '1', '+', '10.00000000', '+');
 INSERT INTO oc_product_option_value VALUES ('17', '227', '47', '13', '50', '0', '1', '0.0000', '+', '0', '+', '0.00000000', '+');
 INSERT INTO oc_product_option_value VALUES ('18', '227', '47', '13', '49', '0', '1', '0.0000', '+', '0', '+', '0.00000000', '+');
-INSERT INTO oc_product_option_value VALUES ('19', '231', '50', '1', '43', '300', '1', '30.0000', '+', '3', '+', '30.00000000', '+');
+INSERT INTO oc_product_option_value VALUES ('33', '238', '50', '13', '49', '5', '1', '0.0000', '+', '0', '+', '0.00000000', '+');
+INSERT INTO oc_product_option_value VALUES ('32', '238', '50', '13', '50', '10', '1', '0.0000', '+', '0', '+', '0.00000000', '+');
 INSERT INTO oc_product_option_value VALUES ('23', '232', '50', '5', '39', '92', '1', '4.0000', '+', '0', '+', '4.00000000', '+');
 INSERT INTO oc_product_option_value VALUES ('22', '232', '50', '5', '41', '100', '0', '1.0000', '+', '0', '+', '1.00000000', '+');
 INSERT INTO oc_product_option_value VALUES ('24', '232', '50', '5', '40', '300', '0', '3.0000', '+', '0', '+', '3.00000000', '+');
-INSERT INTO oc_product_option_value VALUES ('29', '234', '50', '2', '45', '3998', '1', '40.0000', '+', '0', '+', '40.00000000', '+');
-INSERT INTO oc_product_option_value VALUES ('28', '234', '50', '2', '24', '194', '1', '20.0000', '+', '0', '+', '20.00000000', '+');
 INSERT INTO oc_product_option_value VALUES ('25', '232', '50', '5', '42', '200', '1', '2.0000', '+', '0', '+', '2.00000000', '+');
-INSERT INTO oc_product_option_value VALUES ('26', '234', '50', '2', '23', '48', '1', '10.0000', '+', '0', '+', '10.00000000', '+');
-INSERT INTO oc_product_option_value VALUES ('27', '234', '50', '2', '44', '2696', '1', '30.0000', '+', '0', '+', '30.00000000', '+');
 INSERT INTO oc_product_option_value VALUES ('30', '237', '51', '5', '40', '5', '1', '0.0000', '+', '0', '+', '0.00000000', '+');
 INSERT INTO oc_product_option_value VALUES ('31', '237', '51', '5', '39', '2', '1', '0.0000', '+', '0', '+', '0.00000000', '+');
 
@@ -2648,7 +2737,7 @@ CREATE TABLE `oc_product_reward` (
   `customer_group_id` int(11) NOT NULL DEFAULT '0',
   `points` int(8) NOT NULL DEFAULT '0',
   PRIMARY KEY (`product_reward_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=560 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=574 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_product_reward
@@ -2670,7 +2759,7 @@ INSERT INTO oc_product_reward VALUES ('351', '36', '1', '0');
 INSERT INTO oc_product_reward VALUES ('353', '34', '1', '0');
 INSERT INTO oc_product_reward VALUES ('355', '32', '1', '0');
 INSERT INTO oc_product_reward VALUES ('521', '49', '1', '1000');
-INSERT INTO oc_product_reward VALUES ('556', '50', '1', '100');
+INSERT INTO oc_product_reward VALUES ('573', '50', '1', '100');
 INSERT INTO oc_product_reward VALUES ('559', '51', '1', '200');
 
 -- ----------------------------
@@ -2683,18 +2772,20 @@ CREATE TABLE `oc_product_special` (
   `customer_group_id` int(11) NOT NULL,
   `priority` int(5) NOT NULL DEFAULT '1',
   `price` decimal(15,4) NOT NULL DEFAULT '0.0000',
+  `quantity_init` int(4) NOT NULL DEFAULT '0',
+  `quantity_sold` int(4) NOT NULL DEFAULT '0',
   `date_start` date NOT NULL DEFAULT '0000-00-00',
   `date_end` date NOT NULL DEFAULT '0000-00-00',
   PRIMARY KEY (`product_special_id`),
   KEY `product_id` (`product_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=454 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=468 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_product_special
 -- ----------------------------
-INSERT INTO oc_product_special VALUES ('451', '50', '1', '1', '90.0000', '2013-08-02', '2013-08-02');
-INSERT INTO oc_product_special VALUES ('453', '51', '1', '2', '90.0000', '0000-00-00', '0000-00-00');
-INSERT INTO oc_product_special VALUES ('452', '51', '1', '1', '80.0000', '2013-08-04', '2013-08-05');
+INSERT INTO oc_product_special VALUES ('467', '50', '1', '1', '90.0000', '0', '0', '2013-08-02', '2013-08-17');
+INSERT INTO oc_product_special VALUES ('453', '51', '1', '2', '90.0000', '0', '0', '0000-00-00', '0000-00-00');
+INSERT INTO oc_product_special VALUES ('452', '51', '1', '1', '80.0000', '0', '0', '2013-08-04', '2013-08-05');
 
 -- ----------------------------
 -- Table structure for `oc_product_to_category`
@@ -3026,7 +3117,7 @@ CREATE TABLE `oc_setting` (
   `value` text NOT NULL,
   `serialized` tinyint(1) NOT NULL,
   PRIMARY KEY (`setting_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=4234 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=4453 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_setting
@@ -3043,12 +3134,12 @@ INSERT INTO oc_setting VALUES ('1431', '0', 'cod', 'cod_status', '1', '0');
 INSERT INTO oc_setting VALUES ('1430', '0', 'cod', 'cod_geo_zone_id', '0', '0');
 INSERT INTO oc_setting VALUES ('1003', '0', 'shipping', 'shipping_status', '0', '0');
 INSERT INTO oc_setting VALUES ('1002', '0', 'shipping', 'shipping_estimator', '0', '0');
-INSERT INTO oc_setting VALUES ('4127', '0', 'latest', 'latest_module', 'a:1:{i:0;a:7:{s:5:\"limit\";s:1:\"5\";s:11:\"image_width\";s:2:\"80\";s:12:\"image_height\";s:2:\"80\";s:9:\"layout_id\";s:1:\"1\";s:8:\"position\";s:11:\"content_top\";s:6:\"status\";s:1:\"1\";s:10:\"sort_order\";s:1:\"2\";}}', '1');
+INSERT INTO oc_setting VALUES ('4342', '0', 'filter', 'filter_module', 'a:2:{i:1;a:4:{s:9:\"layout_id\";s:1:\"3\";s:8:\"position\";s:11:\"column_left\";s:6:\"status\";s:1:\"1\";s:10:\"sort_order\";s:1:\"1\";}i:2;a:4:{s:9:\"layout_id\";s:1:\"2\";s:8:\"position\";s:11:\"column_left\";s:6:\"status\";s:1:\"1\";s:10:\"sort_order\";s:1:\"2\";}}', '1');
+INSERT INTO oc_setting VALUES ('4345', '0', 'latest', 'latest_module', 'a:1:{i:0;a:7:{s:5:\"limit\";s:1:\"5\";s:11:\"image_width\";s:2:\"80\";s:12:\"image_height\";s:2:\"80\";s:9:\"layout_id\";s:1:\"1\";s:8:\"position\";s:11:\"content_top\";s:6:\"status\";s:1:\"0\";s:10:\"sort_order\";s:1:\"2\";}}', '1');
 INSERT INTO oc_setting VALUES ('997', '0', 'coupon', 'coupon_sort_order', '4', '0');
 INSERT INTO oc_setting VALUES ('996', '0', 'coupon', 'coupon_status', '0', '0');
-INSERT INTO oc_setting VALUES ('4233', '0', 'config', 'config_google_analytics', '', '0');
-INSERT INTO oc_setting VALUES ('4232', '0', 'config', 'config_error_filename', 'error.txt', '0');
-INSERT INTO oc_setting VALUES ('4231', '0', 'config', 'config_error_log', '1', '0');
+INSERT INTO oc_setting VALUES ('4448', '0', 'config', 'config_google_analytics', '', '0');
+INSERT INTO oc_setting VALUES ('4447', '0', 'config', 'config_error_filename', 'error.txt', '0');
 INSERT INTO oc_setting VALUES ('34', '0', 'flat', 'flat_sort_order', '1', '0');
 INSERT INTO oc_setting VALUES ('35', '0', 'flat', 'flat_status', '1', '0');
 INSERT INTO oc_setting VALUES ('36', '0', 'flat', 'flat_geo_zone_id', '0', '0');
@@ -3057,126 +3148,128 @@ INSERT INTO oc_setting VALUES ('3094', '0', 'carousel', 'carousel_module', 'a:1:
 INSERT INTO oc_setting VALUES ('41', '0', 'flat', 'flat_cost', '5.00', '0');
 INSERT INTO oc_setting VALUES ('999', '0', 'credit', 'credit_sort_order', '7', '0');
 INSERT INTO oc_setting VALUES ('998', '0', 'credit', 'credit_status', '0', '0');
-INSERT INTO oc_setting VALUES ('4226', '0', 'config', 'config_maintenance', '0', '0');
-INSERT INTO oc_setting VALUES ('4227', '0', 'config', 'config_password', '1', '0');
 INSERT INTO oc_setting VALUES ('1001', '0', 'reward', 'reward_sort_order', '2', '0');
 INSERT INTO oc_setting VALUES ('1000', '0', 'reward', 'reward_status', '0', '0');
-INSERT INTO oc_setting VALUES ('4230', '0', 'config', 'config_error_display', '1', '0');
+INSERT INTO oc_setting VALUES ('4445', '0', 'config', 'config_error_display', '1', '0');
 INSERT INTO oc_setting VALUES ('56', '0', 'affiliate', 'affiliate_module', 'a:1:{i:0;a:4:{s:9:\"layout_id\";s:2:\"10\";s:8:\"position\";s:12:\"column_right\";s:6:\"status\";s:1:\"1\";s:10:\"sort_order\";s:1:\"1\";}}', '1');
-INSERT INTO oc_setting VALUES ('4229', '0', 'config', 'config_compression', '0', '0');
+INSERT INTO oc_setting VALUES ('4446', '0', 'config', 'config_error_log', '1', '0');
 INSERT INTO oc_setting VALUES ('1429', '0', 'cod', 'cod_order_status_id', '1', '0');
+INSERT INTO oc_setting VALUES ('4443', '0', 'config', 'config_encryption', 'c4508ce7e482366095e768ee9e029439', '0');
 INSERT INTO oc_setting VALUES ('365', '0', 'account', 'account_module', 'a:1:{i:0;a:4:{s:9:\"layout_id\";s:1:\"6\";s:8:\"position\";s:12:\"column_right\";s:6:\"status\";s:1:\"1\";s:10:\"sort_order\";s:1:\"1\";}}', '1');
 INSERT INTO oc_setting VALUES ('355', '0', 'category', 'category_module', 'a:2:{i:0;a:4:{s:9:\"layout_id\";s:1:\"3\";s:8:\"position\";s:11:\"column_left\";s:6:\"status\";s:1:\"1\";s:10:\"sort_order\";s:1:\"1\";}i:1;a:4:{s:9:\"layout_id\";s:1:\"2\";s:8:\"position\";s:11:\"column_left\";s:6:\"status\";s:1:\"1\";s:10:\"sort_order\";s:1:\"1\";}}', '1');
-INSERT INTO oc_setting VALUES ('4228', '0', 'config', 'config_encryption', 'c4508ce7e482366095e768ee9e029439', '0');
+INSERT INTO oc_setting VALUES ('4444', '0', 'config', 'config_compression', '0', '0');
 INSERT INTO oc_setting VALUES ('1432', '0', 'cod', 'cod_sort_order', '5', '0');
 INSERT INTO oc_setting VALUES ('1428', '0', 'cod', 'cod_total', '0.01', '0');
-INSERT INTO oc_setting VALUES ('4223', '0', 'config', 'config_seo_url', '1', '0');
-INSERT INTO oc_setting VALUES ('4224', '0', 'config', 'config_file_extension_allowed', 'txt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc\r\nrtf\r\nxls\r\nppt\r\nodt\r\nods', '0');
-INSERT INTO oc_setting VALUES ('4225', '0', 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/jpeg\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/vnd.microsoft.icon\r\nimage/tiff\r\nimage/tiff\r\nimage/svg+xml\r\nimage/svg+xml\r\napplication/zip\r\napplication/x-rar-compressed\r\napplication/x-msdownload\r\napplication/vnd.ms-cab-compressed\r\naudio/mpeg\r\nvideo/quicktime\r\nvideo/quicktime\r\napplication/pdf\r\nimage/vnd.adobe.photoshop\r\napplication/postscript\r\napplication/postscript\r\napplication/postscript\r\napplication/msword\r\napplication/rtf\r\napplication/vnd.ms-excel\r\napplication/vnd.ms-powerpoint\r\napplication/vnd.oasis.opendocument.text\r\napplication/vnd.oasis.opendocument.spreadsheet', '0');
-INSERT INTO oc_setting VALUES ('4220', '0', 'config', 'config_secure', '0', '0');
-INSERT INTO oc_setting VALUES ('4221', '0', 'config', 'config_shared', '0', '0');
-INSERT INTO oc_setting VALUES ('4222', '0', 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', '0');
+INSERT INTO oc_setting VALUES ('4442', '0', 'config', 'config_password', '1', '0');
+INSERT INTO oc_setting VALUES ('4438', '0', 'config', 'config_seo_url', '1', '0');
+INSERT INTO oc_setting VALUES ('4439', '0', 'config', 'config_file_extension_allowed', 'txt\r\npng\r\njpe\r\njpeg\r\njpg\r\ngif\r\nbmp\r\nico\r\ntiff\r\ntif\r\nsvg\r\nsvgz\r\nzip\r\nrar\r\nmsi\r\ncab\r\nmp3\r\nqt\r\nmov\r\npdf\r\npsd\r\nai\r\neps\r\nps\r\ndoc\r\nrtf\r\nxls\r\nppt\r\nodt\r\nods', '0');
+INSERT INTO oc_setting VALUES ('4440', '0', 'config', 'config_file_mime_allowed', 'text/plain\r\nimage/png\r\nimage/jpeg\r\nimage/jpeg\r\nimage/jpeg\r\nimage/gif\r\nimage/bmp\r\nimage/vnd.microsoft.icon\r\nimage/tiff\r\nimage/tiff\r\nimage/svg+xml\r\nimage/svg+xml\r\napplication/zip\r\napplication/x-rar-compressed\r\napplication/x-msdownload\r\napplication/vnd.ms-cab-compressed\r\naudio/mpeg\r\nvideo/quicktime\r\nvideo/quicktime\r\napplication/pdf\r\nimage/vnd.adobe.photoshop\r\napplication/postscript\r\napplication/postscript\r\napplication/postscript\r\napplication/msword\r\napplication/rtf\r\napplication/vnd.ms-excel\r\napplication/vnd.ms-powerpoint\r\napplication/vnd.oasis.opendocument.text\r\napplication/vnd.oasis.opendocument.spreadsheet', '0');
+INSERT INTO oc_setting VALUES ('4441', '0', 'config', 'config_maintenance', '0', '0');
+INSERT INTO oc_setting VALUES ('4435', '0', 'config', 'config_secure', '0', '0');
+INSERT INTO oc_setting VALUES ('4436', '0', 'config', 'config_shared', '0', '0');
+INSERT INTO oc_setting VALUES ('4437', '0', 'config', 'config_robots', 'abot\r\ndbot\r\nebot\r\nhbot\r\nkbot\r\nlbot\r\nmbot\r\nnbot\r\nobot\r\npbot\r\nrbot\r\nsbot\r\ntbot\r\nvbot\r\nybot\r\nzbot\r\nbot.\r\nbot/\r\n_bot\r\n.bot\r\n/bot\r\n-bot\r\n:bot\r\n(bot\r\ncrawl\r\nslurp\r\nspider\r\nseek\r\naccoona\r\nacoon\r\nadressendeutschland\r\nah-ha.com\r\nahoy\r\naltavista\r\nananzi\r\nanthill\r\nappie\r\narachnophilia\r\narale\r\naraneo\r\naranha\r\narchitext\r\naretha\r\narks\r\nasterias\r\natlocal\r\natn\r\natomz\r\naugurfind\r\nbackrub\r\nbannana_bot\r\nbaypup\r\nbdfetch\r\nbig brother\r\nbiglotron\r\nbjaaland\r\nblackwidow\r\nblaiz\r\nblog\r\nblo.\r\nbloodhound\r\nboitho\r\nbooch\r\nbradley\r\nbutterfly\r\ncalif\r\ncassandra\r\nccubee\r\ncfetch\r\ncharlotte\r\nchurl\r\ncienciaficcion\r\ncmc\r\ncollective\r\ncomagent\r\ncombine\r\ncomputingsite\r\ncsci\r\ncurl\r\ncusco\r\ndaumoa\r\ndeepindex\r\ndelorie\r\ndepspid\r\ndeweb\r\ndie blinde kuh\r\ndigger\r\nditto\r\ndmoz\r\ndocomo\r\ndownload express\r\ndtaagent\r\ndwcp\r\nebiness\r\nebingbong\r\ne-collector\r\nejupiter\r\nemacs-w3 search engine\r\nesther\r\nevliya celebi\r\nezresult\r\nfalcon\r\nfelix ide\r\nferret\r\nfetchrover\r\nfido\r\nfindlinks\r\nfireball\r\nfish search\r\nfouineur\r\nfunnelweb\r\ngazz\r\ngcreep\r\ngenieknows\r\ngetterroboplus\r\ngeturl\r\nglx\r\ngoforit\r\ngolem\r\ngrabber\r\ngrapnel\r\ngralon\r\ngriffon\r\ngromit\r\ngrub\r\ngulliver\r\nhamahakki\r\nharvest\r\nhavindex\r\nhelix\r\nheritrix\r\nhku www octopus\r\nhomerweb\r\nhtdig\r\nhtml index\r\nhtml_analyzer\r\nhtmlgobble\r\nhubater\r\nhyper-decontextualizer\r\nia_archiver\r\nibm_planetwide\r\nichiro\r\niconsurf\r\niltrovatore\r\nimage.kapsi.net\r\nimagelock\r\nincywincy\r\nindexer\r\ninfobee\r\ninformant\r\ningrid\r\ninktomisearch.com\r\ninspector web\r\nintelliagent\r\ninternet shinchakubin\r\nip3000\r\niron33\r\nisraeli-search\r\nivia\r\njack\r\njakarta\r\njavabee\r\njetbot\r\njumpstation\r\nkatipo\r\nkdd-explorer\r\nkilroy\r\nknowledge\r\nkototoi\r\nkretrieve\r\nlabelgrabber\r\nlachesis\r\nlarbin\r\nlegs\r\nlibwww\r\nlinkalarm\r\nlink validator\r\nlinkscan\r\nlockon\r\nlwp\r\nlycos\r\nmagpie\r\nmantraagent\r\nmapoftheinternet\r\nmarvin/\r\nmattie\r\nmediafox\r\nmediapartners\r\nmercator\r\nmerzscope\r\nmicrosoft url control\r\nminirank\r\nmiva\r\nmj12\r\nmnogosearch\r\nmoget\r\nmonster\r\nmoose\r\nmotor\r\nmultitext\r\nmuncher\r\nmuscatferret\r\nmwd.search\r\nmyweb\r\nnajdi\r\nnameprotect\r\nnationaldirectory\r\nnazilla\r\nncsa beta\r\nnec-meshexplorer\r\nnederland.zoek\r\nnetcarta webmap engine\r\nnetmechanic\r\nnetresearchserver\r\nnetscoop\r\nnewscan-online\r\nnhse\r\nnokia6682/\r\nnomad\r\nnoyona\r\nnutch\r\nnzexplorer\r\nobjectssearch\r\noccam\r\nomni\r\nopen text\r\nopenfind\r\nopenintelligencedata\r\norb search\r\nosis-project\r\npack rat\r\npageboy\r\npagebull\r\npage_verifier\r\npanscient\r\nparasite\r\npartnersite\r\npatric\r\npear.\r\npegasus\r\nperegrinator\r\npgp key agent\r\nphantom\r\nphpdig\r\npicosearch\r\npiltdownman\r\npimptrain\r\npinpoint\r\npioneer\r\npiranha\r\nplumtreewebaccessor\r\npogodak\r\npoirot\r\npompos\r\npoppelsdorf\r\npoppi\r\npopular iconoclast\r\npsycheclone\r\npublisher\r\npython\r\nrambler\r\nraven search\r\nroach\r\nroad runner\r\nroadhouse\r\nrobbie\r\nrobofox\r\nrobozilla\r\nrules\r\nsalty\r\nsbider\r\nscooter\r\nscoutjet\r\nscrubby\r\nsearch.\r\nsearchprocess\r\nsemanticdiscovery\r\nsenrigan\r\nsg-scout\r\nshai\'hulud\r\nshark\r\nshopwiki\r\nsidewinder\r\nsift\r\nsilk\r\nsimmany\r\nsite searcher\r\nsite valet\r\nsitetech-rover\r\nskymob.com\r\nsleek\r\nsmartwit\r\nsna-\r\nsnappy\r\nsnooper\r\nsohu\r\nspeedfind\r\nsphere\r\nsphider\r\nspinner\r\nspyder\r\nsteeler/\r\nsuke\r\nsuntek\r\nsupersnooper\r\nsurfnomore\r\nsven\r\nsygol\r\nszukacz\r\ntach black widow\r\ntarantula\r\ntempleton\r\n/teoma\r\nt-h-u-n-d-e-r-s-t-o-n-e\r\ntheophrastus\r\ntitan\r\ntitin\r\ntkwww\r\ntoutatis\r\nt-rex\r\ntutorgig\r\ntwiceler\r\ntwisted\r\nucsd\r\nudmsearch\r\nurl check\r\nupdated\r\nvagabondo\r\nvalkyrie\r\nverticrawl\r\nvictoria\r\nvision-search\r\nvolcano\r\nvoyager/\r\nvoyager-hc\r\nw3c_validator\r\nw3m2\r\nw3mir\r\nwalker\r\nwallpaper\r\nwanderer\r\nwauuu\r\nwavefire\r\nweb core\r\nweb hopper\r\nweb wombat\r\nwebbandit\r\nwebcatcher\r\nwebcopy\r\nwebfoot\r\nweblayers\r\nweblinker\r\nweblog monitor\r\nwebmirror\r\nwebmonkey\r\nwebquest\r\nwebreaper\r\nwebsitepulse\r\nwebsnarf\r\nwebstolperer\r\nwebvac\r\nwebwalk\r\nwebwatch\r\nwebwombat\r\nwebzinger\r\nwhizbang\r\nwhowhere\r\nwild ferret\r\nworldlight\r\nwwwc\r\nwwwster\r\nxenu\r\nxget\r\nxift\r\nxirq\r\nyandex\r\nyanga\r\nyeti\r\nyodao\r\nzao\r\nzippp\r\nzyborg', '0');
 INSERT INTO oc_setting VALUES ('1433', '0', 'voucher', 'voucher_status', '0', '0');
 INSERT INTO oc_setting VALUES ('1434', '0', 'voucher', 'voucher_sort_order', '8', '0');
 INSERT INTO oc_setting VALUES ('103', '0', 'free_checkout', 'free_checkout_status', '1', '0');
 INSERT INTO oc_setting VALUES ('104', '0', 'free_checkout', 'free_checkout_order_status_id', '1', '0');
-INSERT INTO oc_setting VALUES ('2983', '0', 'slideshow', 'slideshow_module', 'a:1:{i:0;a:7:{s:9:\"banner_id\";s:1:\"6\";s:5:\"width\";s:3:\"980\";s:6:\"height\";s:3:\"280\";s:9:\"layout_id\";s:1:\"1\";s:8:\"position\";s:11:\"content_top\";s:6:\"status\";s:1:\"1\";s:10:\"sort_order\";s:1:\"1\";}}', '1');
+INSERT INTO oc_setting VALUES ('4451', '0', 'slideshow', 'slideshow_module', 'a:1:{i:0;a:7:{s:9:\"banner_id\";s:1:\"9\";s:5:\"width\";s:3:\"300\";s:6:\"height\";s:3:\"300\";s:9:\"layout_id\";s:1:\"1\";s:8:\"position\";s:11:\"content_top\";s:6:\"status\";s:1:\"1\";s:10:\"sort_order\";s:1:\"1\";}}', '1');
 INSERT INTO oc_setting VALUES ('109', '0', 'banner', 'banner_module', 'a:1:{i:0;a:8:{s:9:\"banner_id\";s:1:\"6\";s:5:\"width\";s:3:\"182\";s:6:\"height\";s:3:\"182\";s:11:\"resize_type\";s:7:\"default\";s:9:\"layout_id\";s:1:\"3\";s:8:\"position\";s:11:\"column_left\";s:6:\"status\";s:1:\"1\";s:10:\"sort_order\";s:1:\"3\";}}', '1');
-INSERT INTO oc_setting VALUES ('4219', '0', 'config', 'config_fraud_status_id', '7', '0');
-INSERT INTO oc_setting VALUES ('4218', '0', 'config', 'config_fraud_score', '', '0');
-INSERT INTO oc_setting VALUES ('4217', '0', 'config', 'config_fraud_key', '', '0');
-INSERT INTO oc_setting VALUES ('4216', '0', 'config', 'config_fraud_detection', '0', '0');
-INSERT INTO oc_setting VALUES ('4214', '0', 'config', 'config_account_mail', '1', '0');
-INSERT INTO oc_setting VALUES ('4215', '0', 'config', 'config_alert_emails', '', '0');
-INSERT INTO oc_setting VALUES ('4213', '0', 'config', 'config_alert_mail', '1', '0');
-INSERT INTO oc_setting VALUES ('4212', '0', 'config', 'config_smtp_timeout', '60', '0');
-INSERT INTO oc_setting VALUES ('4211', '0', 'config', 'config_smtp_port', '587', '0');
-INSERT INTO oc_setting VALUES ('4210', '0', 'config', 'config_smtp_password', 'ngusaonoi:-p', '0');
-INSERT INTO oc_setting VALUES ('4209', '0', 'config', 'config_smtp_username', 'thanhtin238', '0');
-INSERT INTO oc_setting VALUES ('4208', '0', 'config', 'config_smtp_host', 'smtp.gmail.com', '0');
-INSERT INTO oc_setting VALUES ('4207', '0', 'config', 'config_mail_parameter', 'thanhtin238@gmail.com', '0');
-INSERT INTO oc_setting VALUES ('4205', '0', 'config', 'config_ftp_status', '0', '0');
-INSERT INTO oc_setting VALUES ('4206', '0', 'config', 'config_mail_protocol', 'smtp', '0');
-INSERT INTO oc_setting VALUES ('4204', '0', 'config', 'config_ftp_root', '', '0');
-INSERT INTO oc_setting VALUES ('4203', '0', 'config', 'config_ftp_password', '', '0');
-INSERT INTO oc_setting VALUES ('4202', '0', 'config', 'config_ftp_username', '', '0');
-INSERT INTO oc_setting VALUES ('4201', '0', 'config', 'config_ftp_port', '21', '0');
-INSERT INTO oc_setting VALUES ('4200', '0', 'config', 'config_ftp_host', 'localhost', '0');
-INSERT INTO oc_setting VALUES ('4199', '0', 'config', 'config_image_cart_height', '47', '0');
-INSERT INTO oc_setting VALUES ('4198', '0', 'config', 'config_image_cart_width', '47', '0');
-INSERT INTO oc_setting VALUES ('4197', '0', 'config', 'config_image_wishlist_height', '47', '0');
-INSERT INTO oc_setting VALUES ('4196', '0', 'config', 'config_image_wishlist_width', '47', '0');
-INSERT INTO oc_setting VALUES ('4195', '0', 'config', 'config_image_compare_height', '90', '0');
-INSERT INTO oc_setting VALUES ('4194', '0', 'config', 'config_image_compare_width', '90', '0');
-INSERT INTO oc_setting VALUES ('4193', '0', 'config', 'config_image_related_height', '80', '0');
-INSERT INTO oc_setting VALUES ('4192', '0', 'config', 'config_image_related_width', '80', '0');
-INSERT INTO oc_setting VALUES ('4191', '0', 'config', 'config_image_additional_height', '74', '0');
-INSERT INTO oc_setting VALUES ('4190', '0', 'config', 'config_image_additional_width', '74', '0');
-INSERT INTO oc_setting VALUES ('4189', '0', 'config', 'config_image_product_height', '80', '0');
-INSERT INTO oc_setting VALUES ('4188', '0', 'config', 'config_image_product_width', '80', '0');
-INSERT INTO oc_setting VALUES ('4187', '0', 'config', 'config_image_popup_height', '500', '0');
-INSERT INTO oc_setting VALUES ('4186', '0', 'config', 'config_image_popup_width', '500', '0');
-INSERT INTO oc_setting VALUES ('4185', '0', 'config', 'config_image_thumb_height', '228', '0');
-INSERT INTO oc_setting VALUES ('4184', '0', 'config', 'config_image_thumb_width', '228', '0');
-INSERT INTO oc_setting VALUES ('4183', '0', 'config', 'config_image_category_height', '80', '0');
-INSERT INTO oc_setting VALUES ('4182', '0', 'config', 'config_image_category_width', '80', '0');
-INSERT INTO oc_setting VALUES ('4181', '0', 'config', 'config_icon', 'data/247favicon.png', '0');
-INSERT INTO oc_setting VALUES ('4180', '0', 'config', 'config_logo', 'data/logo.png', '0');
-INSERT INTO oc_setting VALUES ('4179', '0', 'config', 'config_return_status_id', '2', '0');
-INSERT INTO oc_setting VALUES ('4178', '0', 'config', 'config_return_id', '0', '0');
-INSERT INTO oc_setting VALUES ('4177', '0', 'config', 'config_commission', '5', '0');
-INSERT INTO oc_setting VALUES ('4176', '0', 'config', 'config_affiliate_id', '4', '0');
-INSERT INTO oc_setting VALUES ('4175', '0', 'config', 'config_stock_status_id', '5', '0');
-INSERT INTO oc_setting VALUES ('4174', '0', 'config', 'config_stock_checkout', '0', '0');
-INSERT INTO oc_setting VALUES ('4173', '0', 'config', 'config_stock_warning', '0', '0');
-INSERT INTO oc_setting VALUES ('4172', '0', 'config', 'config_stock_display', '0', '0');
-INSERT INTO oc_setting VALUES ('4171', '0', 'config', 'config_complete_status_id', '5', '0');
-INSERT INTO oc_setting VALUES ('4170', '0', 'config', 'config_order_status_id', '1', '0');
-INSERT INTO oc_setting VALUES ('4169', '0', 'config', 'config_invoice_prefix', 'INV-2013-00', '0');
-INSERT INTO oc_setting VALUES ('4168', '0', 'config', 'config_order_edit', '2', '0');
-INSERT INTO oc_setting VALUES ('4167', '0', 'config', 'config_checkout_id', '5', '0');
-INSERT INTO oc_setting VALUES ('4166', '0', 'config', 'config_guest_checkout', '1', '0');
-INSERT INTO oc_setting VALUES ('4165', '0', 'config', 'config_cart_weight', '0', '0');
-INSERT INTO oc_setting VALUES ('4164', '0', 'config', 'config_account_id', '3', '0');
-INSERT INTO oc_setting VALUES ('4163', '0', 'config', 'config_customer_price', '0', '0');
-INSERT INTO oc_setting VALUES ('4162', '0', 'config', 'config_customer_group_display', 'a:1:{i:0;s:1:\"1\";}', '1');
-INSERT INTO oc_setting VALUES ('4161', '0', 'config', 'config_customer_group_id', '1', '0');
-INSERT INTO oc_setting VALUES ('4160', '0', 'config', 'config_customer_online', '0', '0');
-INSERT INTO oc_setting VALUES ('4159', '0', 'config', 'config_tax_customer', 'shipping', '0');
-INSERT INTO oc_setting VALUES ('4158', '0', 'config', 'config_tax_default', 'shipping', '0');
-INSERT INTO oc_setting VALUES ('4157', '0', 'config', 'config_vat', '0', '0');
-INSERT INTO oc_setting VALUES ('4156', '0', 'config', 'config_tax', '1', '0');
-INSERT INTO oc_setting VALUES ('4155', '0', 'config', 'config_voucher_max', '1000', '0');
-INSERT INTO oc_setting VALUES ('4154', '0', 'config', 'config_voucher_min', '1', '0');
-INSERT INTO oc_setting VALUES ('4153', '0', 'config', 'config_download', '1', '0');
-INSERT INTO oc_setting VALUES ('4152', '0', 'config', 'config_review_status', '1', '0');
-INSERT INTO oc_setting VALUES ('4151', '0', 'config', 'config_product_count', '1', '0');
-INSERT INTO oc_setting VALUES ('4150', '0', 'config', 'config_admin_limit', '20', '0');
-INSERT INTO oc_setting VALUES ('4149', '0', 'config', 'config_catalog_limit', '15', '0');
-INSERT INTO oc_setting VALUES ('4148', '0', 'config', 'config_weight_class_id', '1', '0');
-INSERT INTO oc_setting VALUES ('4147', '0', 'config', 'config_length_class_id', '1', '0');
-INSERT INTO oc_setting VALUES ('4146', '0', 'config', 'config_currency_auto', '1', '0');
-INSERT INTO oc_setting VALUES ('4145', '0', 'config', 'config_currency', 'VND', '0');
-INSERT INTO oc_setting VALUES ('4144', '0', 'config', 'config_admin_language', 'en', '0');
-INSERT INTO oc_setting VALUES ('4143', '0', 'config', 'config_language', 'vi', '0');
-INSERT INTO oc_setting VALUES ('4142', '0', 'config', 'config_zone_id', '3780', '0');
-INSERT INTO oc_setting VALUES ('4141', '0', 'config', 'config_country_id', '230', '0');
-INSERT INTO oc_setting VALUES ('4140', '0', 'config', 'config_layout_id', '4', '0');
+INSERT INTO oc_setting VALUES ('4434', '0', 'config', 'config_fraud_status_id', '7', '0');
+INSERT INTO oc_setting VALUES ('4433', '0', 'config', 'config_fraud_score', '', '0');
+INSERT INTO oc_setting VALUES ('4432', '0', 'config', 'config_fraud_key', '', '0');
+INSERT INTO oc_setting VALUES ('4431', '0', 'config', 'config_fraud_detection', '0', '0');
+INSERT INTO oc_setting VALUES ('4430', '0', 'config', 'config_alert_emails', '', '0');
+INSERT INTO oc_setting VALUES ('4429', '0', 'config', 'config_account_mail', '1', '0');
+INSERT INTO oc_setting VALUES ('4428', '0', 'config', 'config_alert_mail', '1', '0');
+INSERT INTO oc_setting VALUES ('4427', '0', 'config', 'config_smtp_timeout', '60', '0');
+INSERT INTO oc_setting VALUES ('4426', '0', 'config', 'config_smtp_port', '587', '0');
+INSERT INTO oc_setting VALUES ('4425', '0', 'config', 'config_smtp_password', 'ngusaonoi:-p', '0');
+INSERT INTO oc_setting VALUES ('4424', '0', 'config', 'config_smtp_username', 'thanhtin238', '0');
+INSERT INTO oc_setting VALUES ('4423', '0', 'config', 'config_smtp_host', 'smtp.gmail.com', '0');
+INSERT INTO oc_setting VALUES ('4420', '0', 'config', 'config_ftp_status', '0', '0');
+INSERT INTO oc_setting VALUES ('4422', '0', 'config', 'config_mail_parameter', 'thanhtin238@gmail.com', '0');
+INSERT INTO oc_setting VALUES ('4421', '0', 'config', 'config_mail_protocol', 'smtp', '0');
+INSERT INTO oc_setting VALUES ('4419', '0', 'config', 'config_ftp_root', '', '0');
+INSERT INTO oc_setting VALUES ('4418', '0', 'config', 'config_ftp_password', '', '0');
+INSERT INTO oc_setting VALUES ('4417', '0', 'config', 'config_ftp_username', '', '0');
+INSERT INTO oc_setting VALUES ('4416', '0', 'config', 'config_ftp_port', '21', '0');
+INSERT INTO oc_setting VALUES ('4415', '0', 'config', 'config_ftp_host', 'localhost', '0');
+INSERT INTO oc_setting VALUES ('4414', '0', 'config', 'config_image_cart_height', '47', '0');
+INSERT INTO oc_setting VALUES ('4413', '0', 'config', 'config_image_cart_width', '47', '0');
+INSERT INTO oc_setting VALUES ('4412', '0', 'config', 'config_image_wishlist_height', '47', '0');
+INSERT INTO oc_setting VALUES ('4411', '0', 'config', 'config_image_wishlist_width', '47', '0');
+INSERT INTO oc_setting VALUES ('4410', '0', 'config', 'config_image_compare_height', '90', '0');
+INSERT INTO oc_setting VALUES ('4409', '0', 'config', 'config_image_compare_width', '90', '0');
+INSERT INTO oc_setting VALUES ('4408', '0', 'config', 'config_image_related_height', '80', '0');
+INSERT INTO oc_setting VALUES ('4407', '0', 'config', 'config_image_related_width', '80', '0');
+INSERT INTO oc_setting VALUES ('4406', '0', 'config', 'config_image_additional_height', '74', '0');
+INSERT INTO oc_setting VALUES ('4405', '0', 'config', 'config_image_additional_width', '74', '0');
+INSERT INTO oc_setting VALUES ('4404', '0', 'config', 'config_image_product_height', '80', '0');
+INSERT INTO oc_setting VALUES ('4403', '0', 'config', 'config_image_product_width', '80', '0');
+INSERT INTO oc_setting VALUES ('4402', '0', 'config', 'config_image_popup_height', '500', '0');
+INSERT INTO oc_setting VALUES ('4401', '0', 'config', 'config_image_popup_width', '500', '0');
+INSERT INTO oc_setting VALUES ('4400', '0', 'config', 'config_image_thumb_height', '228', '0');
+INSERT INTO oc_setting VALUES ('4399', '0', 'config', 'config_image_thumb_width', '228', '0');
+INSERT INTO oc_setting VALUES ('4398', '0', 'config', 'config_image_category_height', '80', '0');
+INSERT INTO oc_setting VALUES ('4397', '0', 'config', 'config_image_category_width', '80', '0');
+INSERT INTO oc_setting VALUES ('4396', '0', 'config', 'config_icon', 'data/247favicon.png', '0');
+INSERT INTO oc_setting VALUES ('4395', '0', 'config', 'config_logo', 'data/logo.png', '0');
+INSERT INTO oc_setting VALUES ('4394', '0', 'config', 'config_return_status_id', '2', '0');
+INSERT INTO oc_setting VALUES ('4393', '0', 'config', 'config_return_id', '0', '0');
+INSERT INTO oc_setting VALUES ('4392', '0', 'config', 'config_commission', '5', '0');
+INSERT INTO oc_setting VALUES ('4391', '0', 'config', 'config_affiliate_id', '4', '0');
+INSERT INTO oc_setting VALUES ('4390', '0', 'config', 'config_stock_status_id', '5', '0');
+INSERT INTO oc_setting VALUES ('4389', '0', 'config', 'config_stock_checkout', '0', '0');
+INSERT INTO oc_setting VALUES ('4388', '0', 'config', 'config_stock_warning', '0', '0');
+INSERT INTO oc_setting VALUES ('4387', '0', 'config', 'config_stock_display', '0', '0');
+INSERT INTO oc_setting VALUES ('4386', '0', 'config', 'config_complete_status_id', '5', '0');
+INSERT INTO oc_setting VALUES ('4385', '0', 'config', 'config_order_status_id', '1', '0');
+INSERT INTO oc_setting VALUES ('4384', '0', 'config', 'config_invoice_prefix', 'INV-2013-00', '0');
+INSERT INTO oc_setting VALUES ('4383', '0', 'config', 'config_order_edit', '2', '0');
+INSERT INTO oc_setting VALUES ('4382', '0', 'config', 'config_checkout_id', '5', '0');
+INSERT INTO oc_setting VALUES ('4381', '0', 'config', 'config_guest_checkout', '1', '0');
+INSERT INTO oc_setting VALUES ('4380', '0', 'config', 'config_cart_weight', '0', '0');
+INSERT INTO oc_setting VALUES ('4379', '0', 'config', 'config_account_id', '3', '0');
+INSERT INTO oc_setting VALUES ('4378', '0', 'config', 'config_customer_price', '0', '0');
+INSERT INTO oc_setting VALUES ('4377', '0', 'config', 'config_customer_group_display', 'a:1:{i:0;s:1:\"1\";}', '1');
+INSERT INTO oc_setting VALUES ('4376', '0', 'config', 'config_customer_group_id', '1', '0');
+INSERT INTO oc_setting VALUES ('4375', '0', 'config', 'config_customer_online', '0', '0');
+INSERT INTO oc_setting VALUES ('4374', '0', 'config', 'config_tax_customer', 'shipping', '0');
+INSERT INTO oc_setting VALUES ('4373', '0', 'config', 'config_tax_default', 'shipping', '0');
+INSERT INTO oc_setting VALUES ('4372', '0', 'config', 'config_vat', '0', '0');
+INSERT INTO oc_setting VALUES ('4371', '0', 'config', 'config_tax', '1', '0');
+INSERT INTO oc_setting VALUES ('4370', '0', 'config', 'config_voucher_max', '1000', '0');
+INSERT INTO oc_setting VALUES ('4369', '0', 'config', 'config_voucher_min', '1', '0');
+INSERT INTO oc_setting VALUES ('4368', '0', 'config', 'config_download', '1', '0');
+INSERT INTO oc_setting VALUES ('4367', '0', 'config', 'config_review_status', '0', '0');
+INSERT INTO oc_setting VALUES ('4366', '0', 'config', 'config_product_count', '1', '0');
+INSERT INTO oc_setting VALUES ('4365', '0', 'config', 'config_admin_limit', '20', '0');
+INSERT INTO oc_setting VALUES ('4364', '0', 'config', 'config_catalog_limit', '15', '0');
+INSERT INTO oc_setting VALUES ('4363', '0', 'config', 'config_weight_class_id', '1', '0');
+INSERT INTO oc_setting VALUES ('4362', '0', 'config', 'config_length_class_id', '1', '0');
+INSERT INTO oc_setting VALUES ('4361', '0', 'config', 'config_currency_auto', '1', '0');
+INSERT INTO oc_setting VALUES ('4360', '0', 'config', 'config_currency', 'VND', '0');
+INSERT INTO oc_setting VALUES ('4359', '0', 'config', 'config_admin_language', 'en', '0');
+INSERT INTO oc_setting VALUES ('4358', '0', 'config', 'config_language', 'vi', '0');
+INSERT INTO oc_setting VALUES ('4357', '0', 'config', 'config_zone_id', '3780', '0');
+INSERT INTO oc_setting VALUES ('4356', '0', 'config', 'config_country_id', '230', '0');
+INSERT INTO oc_setting VALUES ('4355', '0', 'config', 'config_layout_id', '4', '0');
 INSERT INTO oc_setting VALUES ('3093', '0', 'my_module', 'my_module_module', 'a:1:{i:0;a:4:{s:9:\"layout_id\";s:1:\"6\";s:8:\"position\";s:11:\"column_left\";s:6:\"status\";s:1:\"1\";s:10:\"sort_order\";s:1:\"1\";}}', '1');
 INSERT INTO oc_setting VALUES ('4130', '0', 'featured', 'featured_module', 'a:1:{i:0;a:7:{s:5:\"limit\";s:1:\"6\";s:11:\"image_width\";s:2:\"80\";s:12:\"image_height\";s:2:\"80\";s:9:\"layout_id\";s:1:\"1\";s:8:\"position\";s:11:\"content_top\";s:6:\"status\";s:1:\"1\";s:10:\"sort_order\";s:1:\"3\";}}', '1');
 INSERT INTO oc_setting VALUES ('4128', '0', 'featured', 'product', '', '0');
 INSERT INTO oc_setting VALUES ('4129', '0', 'featured', 'featured_product', '43,40,42,49,46,47,28', '0');
-INSERT INTO oc_setting VALUES ('4139', '0', 'config', 'config_template', 'mytheme', '0');
-INSERT INTO oc_setting VALUES ('4138', '0', 'config', 'config_meta_description', 'My Store', '0');
+INSERT INTO oc_setting VALUES ('4354', '0', 'config', 'config_template', '247shopping', '0');
+INSERT INTO oc_setting VALUES ('4353', '0', 'config', 'config_meta_description', 'My Store', '0');
 INSERT INTO oc_setting VALUES ('2984', '0', 'google_sitemap', 'google_sitemap_status', '1', '0');
 INSERT INTO oc_setting VALUES ('2985', '0', 'google_base', 'google_base_status', '1', '0');
-INSERT INTO oc_setting VALUES ('4137', '0', 'config', 'config_title', 'Your Store', '0');
-INSERT INTO oc_setting VALUES ('4136', '0', 'config', 'config_fax', '', '0');
-INSERT INTO oc_setting VALUES ('4135', '0', 'config', 'config_telephone', '(08) 3862 5868', '0');
-INSERT INTO oc_setting VALUES ('4134', '0', 'config', 'config_email', 'info247@247shopping.vn', '0');
-INSERT INTO oc_setting VALUES ('4133', '0', 'config', 'config_address', '93 Trần Thiện Chánh P.12, Q.10, HCMC', '0');
-INSERT INTO oc_setting VALUES ('4132', '0', 'config', 'config_owner', 'Săn hàng giá rẻ mỗi ngày', '0');
-INSERT INTO oc_setting VALUES ('4131', '0', 'config', 'config_name', 'Săn hàng giá rẻ mỗi ngày', '0');
+INSERT INTO oc_setting VALUES ('4352', '0', 'config', 'config_title', 'Your Store', '0');
+INSERT INTO oc_setting VALUES ('4351', '0', 'config', 'config_fax', '', '0');
+INSERT INTO oc_setting VALUES ('4350', '0', 'config', 'config_telephone', '(08) 3862 5868', '0');
+INSERT INTO oc_setting VALUES ('4349', '0', 'config', 'config_email', 'info247@247shopping.vn', '0');
+INSERT INTO oc_setting VALUES ('4348', '0', 'config', 'config_address', '93 Trần Thiện Chánh P.12, Q.10, HCMC', '0');
+INSERT INTO oc_setting VALUES ('4347', '0', 'config', 'config_owner', 'Săn hàng giá rẻ mỗi ngày', '0');
+INSERT INTO oc_setting VALUES ('4346', '0', 'config', 'config_name', 'Săn hàng giá rẻ mỗi ngày', '0');
+INSERT INTO oc_setting VALUES ('4452', '0', 'deal', 'deal_module', 'a:1:{i:0;a:7:{s:5:\"limit\";s:1:\"5\";s:11:\"image_width\";s:3:\"300\";s:12:\"image_height\";s:3:\"300\";s:9:\"layout_id\";s:1:\"1\";s:8:\"position\";s:11:\"content_top\";s:6:\"status\";s:1:\"1\";s:10:\"sort_order\";s:1:\"3\";}}', '1');
 
 -- ----------------------------
 -- Table structure for `oc_stock_status`
@@ -3303,13 +3396,13 @@ CREATE TABLE `oc_url_alias` (
   `query` varchar(255) NOT NULL,
   `keyword` varchar(255) NOT NULL,
   PRIMARY KEY (`url_alias_id`)
-) ENGINE=MyISAM AUTO_INCREMENT=796 DEFAULT CHARSET=utf8;
+) ENGINE=MyISAM AUTO_INCREMENT=802 DEFAULT CHARSET=utf8;
 
 -- ----------------------------
 -- Records of oc_url_alias
 -- ----------------------------
 INSERT INTO oc_url_alias VALUES ('704', 'product_id=48', 'ipod_classic');
-INSERT INTO oc_url_alias VALUES ('773', 'category_id=20', 'desktops');
+INSERT INTO oc_url_alias VALUES ('801', 'category_id=20', 'desktops');
 INSERT INTO oc_url_alias VALUES ('503', 'category_id=26', 'pc');
 INSERT INTO oc_url_alias VALUES ('505', 'category_id=27', 'mac');
 INSERT INTO oc_url_alias VALUES ('730', 'manufacturer_id=8', 'apple');
@@ -3326,6 +3419,10 @@ INSERT INTO oc_url_alias VALUES ('790', 'news_id=9', 'cach-thuc-mua-hang');
 INSERT INTO oc_url_alias VALUES ('791', 'news_id=10', 'hinh-thuc-thanh-toan');
 INSERT INTO oc_url_alias VALUES ('793', 'news_id=11', 'tai-khoan-va-don-hang');
 INSERT INTO oc_url_alias VALUES ('795', 'product_id=43', 'macbook-product-16');
+INSERT INTO oc_url_alias VALUES ('796', 'zone_id=1', 'thanh-pho-ho-chi-minh');
+INSERT INTO oc_url_alias VALUES ('797', 'zone_id=2', 'ha-noi');
+INSERT INTO oc_url_alias VALUES ('798', 'zone_id=3', 'da-nang');
+INSERT INTO oc_url_alias VALUES ('799', 'zone_id=4', 'can-tho');
 
 -- ----------------------------
 -- Table structure for `oc_user`
@@ -3366,7 +3463,7 @@ CREATE TABLE `oc_user_group` (
 -- ----------------------------
 -- Records of oc_user_group
 -- ----------------------------
-INSERT INTO oc_user_group VALUES ('1', 'Top Administrator', 'a:2:{s:6:\"access\";a:131:{i:0;s:17:\"catalog/attribute\";i:1;s:23:\"catalog/attribute_group\";i:2;s:16:\"catalog/category\";i:3;s:16:\"catalog/download\";i:4;s:14:\"catalog/filter\";i:5;s:19:\"catalog/information\";i:6;s:20:\"catalog/manufacturer\";i:7;s:12:\"catalog/news\";i:8;s:19:\"catalog/news_review\";i:9;s:14:\"catalog/option\";i:10;s:15:\"catalog/product\";i:11;s:14:\"catalog/review\";i:12;s:15:\"catalog/section\";i:13;s:18:\"common/filemanager\";i:14;s:13:\"design/banner\";i:15;s:19:\"design/custom_field\";i:16;s:13:\"design/layout\";i:17;s:14:\"extension/feed\";i:18;s:17:\"extension/manager\";i:19;s:16:\"extension/module\";i:20;s:17:\"extension/payment\";i:21;s:18:\"extension/shipping\";i:22;s:15:\"extension/total\";i:23;s:16:\"feed/google_base\";i:24;s:19:\"feed/google_sitemap\";i:25;s:20:\"localisation/country\";i:26;s:21:\"localisation/currency\";i:27;s:21:\"localisation/geo_zone\";i:28;s:21:\"localisation/language\";i:29;s:25:\"localisation/length_class\";i:30;s:25:\"localisation/order_status\";i:31;s:26:\"localisation/return_action\";i:32;s:26:\"localisation/return_reason\";i:33;s:26:\"localisation/return_status\";i:34;s:25:\"localisation/stock_status\";i:35;s:22:\"localisation/tax_class\";i:36;s:21:\"localisation/tax_rate\";i:37;s:25:\"localisation/weight_class\";i:38;s:17:\"localisation/zone\";i:39;s:14:\"module/account\";i:40;s:16:\"module/affiliate\";i:41;s:13:\"module/banner\";i:42;s:17:\"module/bestseller\";i:43;s:15:\"module/carousel\";i:44;s:15:\"module/category\";i:45;s:15:\"module/featured\";i:46;s:13:\"module/filter\";i:47;s:18:\"module/google_talk\";i:48;s:18:\"module/information\";i:49;s:13:\"module/latest\";i:50;s:16:\"module/my_module\";i:51;s:16:\"module/slideshow\";i:52;s:14:\"module/special\";i:53;s:12:\"module/store\";i:54;s:14:\"module/welcome\";i:55;s:24:\"payment/authorizenet_aim\";i:56;s:21:\"payment/bank_transfer\";i:57;s:14:\"payment/cheque\";i:58;s:11:\"payment/cod\";i:59;s:21:\"payment/free_checkout\";i:60;s:14:\"payment/liqpay\";i:61;s:20:\"payment/moneybookers\";i:62;s:14:\"payment/nochex\";i:63;s:15:\"payment/paymate\";i:64;s:16:\"payment/paypoint\";i:65;s:13:\"payment/payza\";i:66;s:26:\"payment/perpetual_payments\";i:67;s:14:\"payment/pp_pro\";i:68;s:17:\"payment/pp_pro_uk\";i:69;s:19:\"payment/pp_standard\";i:70;s:15:\"payment/sagepay\";i:71;s:22:\"payment/sagepay_direct\";i:72;s:18:\"payment/sagepay_us\";i:73;s:19:\"payment/twocheckout\";i:74;s:28:\"payment/web_payment_software\";i:75;s:16:\"payment/worldpay\";i:76;s:27:\"report/affiliate_commission\";i:77;s:22:\"report/customer_credit\";i:78;s:22:\"report/customer_online\";i:79;s:21:\"report/customer_order\";i:80;s:22:\"report/customer_reward\";i:81;s:24:\"report/product_purchased\";i:82;s:21:\"report/product_viewed\";i:83;s:18:\"report/sale_coupon\";i:84;s:17:\"report/sale_order\";i:85;s:18:\"report/sale_return\";i:86;s:20:\"report/sale_shipping\";i:87;s:15:\"report/sale_tax\";i:88;s:14:\"sale/affiliate\";i:89;s:12:\"sale/contact\";i:90;s:11:\"sale/coupon\";i:91;s:13:\"sale/customer\";i:92;s:20:\"sale/customer_ban_ip\";i:93;s:19:\"sale/customer_group\";i:94;s:10:\"sale/order\";i:95;s:11:\"sale/return\";i:96;s:12:\"sale/voucher\";i:97;s:18:\"sale/voucher_theme\";i:98;s:15:\"setting/setting\";i:99;s:13:\"setting/store\";i:100;s:16:\"shipping/auspost\";i:101;s:17:\"shipping/citylink\";i:102;s:14:\"shipping/fedex\";i:103;s:13:\"shipping/flat\";i:104;s:13:\"shipping/free\";i:105;s:13:\"shipping/item\";i:106;s:23:\"shipping/parcelforce_48\";i:107;s:15:\"shipping/pickup\";i:108;s:19:\"shipping/royal_mail\";i:109;s:12:\"shipping/ups\";i:110;s:13:\"shipping/usps\";i:111;s:15:\"shipping/weight\";i:112;s:11:\"tool/backup\";i:113;s:14:\"tool/error_log\";i:114;s:12:\"total/coupon\";i:115;s:12:\"total/credit\";i:116;s:14:\"total/handling\";i:117;s:16:\"total/klarna_fee\";i:118;s:19:\"total/low_order_fee\";i:119;s:12:\"total/reward\";i:120;s:14:\"total/shipping\";i:121;s:15:\"total/sub_total\";i:122;s:9:\"total/tax\";i:123;s:11:\"total/total\";i:124;s:13:\"total/voucher\";i:125;s:9:\"user/user\";i:126;s:20:\"user/user_permission\";i:127;s:14:\"module/welcome\";i:128;s:18:\"module/information\";i:129;s:13:\"module/latest\";i:130;s:20:\"module/vqmod_manager\";}s:6:\"modify\";a:131:{i:0;s:17:\"catalog/attribute\";i:1;s:23:\"catalog/attribute_group\";i:2;s:16:\"catalog/category\";i:3;s:16:\"catalog/download\";i:4;s:14:\"catalog/filter\";i:5;s:19:\"catalog/information\";i:6;s:20:\"catalog/manufacturer\";i:7;s:12:\"catalog/news\";i:8;s:19:\"catalog/news_review\";i:9;s:14:\"catalog/option\";i:10;s:15:\"catalog/product\";i:11;s:14:\"catalog/review\";i:12;s:15:\"catalog/section\";i:13;s:18:\"common/filemanager\";i:14;s:13:\"design/banner\";i:15;s:19:\"design/custom_field\";i:16;s:13:\"design/layout\";i:17;s:14:\"extension/feed\";i:18;s:17:\"extension/manager\";i:19;s:16:\"extension/module\";i:20;s:17:\"extension/payment\";i:21;s:18:\"extension/shipping\";i:22;s:15:\"extension/total\";i:23;s:16:\"feed/google_base\";i:24;s:19:\"feed/google_sitemap\";i:25;s:20:\"localisation/country\";i:26;s:21:\"localisation/currency\";i:27;s:21:\"localisation/geo_zone\";i:28;s:21:\"localisation/language\";i:29;s:25:\"localisation/length_class\";i:30;s:25:\"localisation/order_status\";i:31;s:26:\"localisation/return_action\";i:32;s:26:\"localisation/return_reason\";i:33;s:26:\"localisation/return_status\";i:34;s:25:\"localisation/stock_status\";i:35;s:22:\"localisation/tax_class\";i:36;s:21:\"localisation/tax_rate\";i:37;s:25:\"localisation/weight_class\";i:38;s:17:\"localisation/zone\";i:39;s:14:\"module/account\";i:40;s:16:\"module/affiliate\";i:41;s:13:\"module/banner\";i:42;s:17:\"module/bestseller\";i:43;s:15:\"module/carousel\";i:44;s:15:\"module/category\";i:45;s:15:\"module/featured\";i:46;s:13:\"module/filter\";i:47;s:18:\"module/google_talk\";i:48;s:18:\"module/information\";i:49;s:13:\"module/latest\";i:50;s:16:\"module/my_module\";i:51;s:16:\"module/slideshow\";i:52;s:14:\"module/special\";i:53;s:12:\"module/store\";i:54;s:14:\"module/welcome\";i:55;s:24:\"payment/authorizenet_aim\";i:56;s:21:\"payment/bank_transfer\";i:57;s:14:\"payment/cheque\";i:58;s:11:\"payment/cod\";i:59;s:21:\"payment/free_checkout\";i:60;s:14:\"payment/liqpay\";i:61;s:20:\"payment/moneybookers\";i:62;s:14:\"payment/nochex\";i:63;s:15:\"payment/paymate\";i:64;s:16:\"payment/paypoint\";i:65;s:13:\"payment/payza\";i:66;s:26:\"payment/perpetual_payments\";i:67;s:14:\"payment/pp_pro\";i:68;s:17:\"payment/pp_pro_uk\";i:69;s:19:\"payment/pp_standard\";i:70;s:15:\"payment/sagepay\";i:71;s:22:\"payment/sagepay_direct\";i:72;s:18:\"payment/sagepay_us\";i:73;s:19:\"payment/twocheckout\";i:74;s:28:\"payment/web_payment_software\";i:75;s:16:\"payment/worldpay\";i:76;s:27:\"report/affiliate_commission\";i:77;s:22:\"report/customer_credit\";i:78;s:22:\"report/customer_online\";i:79;s:21:\"report/customer_order\";i:80;s:22:\"report/customer_reward\";i:81;s:24:\"report/product_purchased\";i:82;s:21:\"report/product_viewed\";i:83;s:18:\"report/sale_coupon\";i:84;s:17:\"report/sale_order\";i:85;s:18:\"report/sale_return\";i:86;s:20:\"report/sale_shipping\";i:87;s:15:\"report/sale_tax\";i:88;s:14:\"sale/affiliate\";i:89;s:12:\"sale/contact\";i:90;s:11:\"sale/coupon\";i:91;s:13:\"sale/customer\";i:92;s:20:\"sale/customer_ban_ip\";i:93;s:19:\"sale/customer_group\";i:94;s:10:\"sale/order\";i:95;s:11:\"sale/return\";i:96;s:12:\"sale/voucher\";i:97;s:18:\"sale/voucher_theme\";i:98;s:15:\"setting/setting\";i:99;s:13:\"setting/store\";i:100;s:16:\"shipping/auspost\";i:101;s:17:\"shipping/citylink\";i:102;s:14:\"shipping/fedex\";i:103;s:13:\"shipping/flat\";i:104;s:13:\"shipping/free\";i:105;s:13:\"shipping/item\";i:106;s:23:\"shipping/parcelforce_48\";i:107;s:15:\"shipping/pickup\";i:108;s:19:\"shipping/royal_mail\";i:109;s:12:\"shipping/ups\";i:110;s:13:\"shipping/usps\";i:111;s:15:\"shipping/weight\";i:112;s:11:\"tool/backup\";i:113;s:14:\"tool/error_log\";i:114;s:12:\"total/coupon\";i:115;s:12:\"total/credit\";i:116;s:14:\"total/handling\";i:117;s:16:\"total/klarna_fee\";i:118;s:19:\"total/low_order_fee\";i:119;s:12:\"total/reward\";i:120;s:14:\"total/shipping\";i:121;s:15:\"total/sub_total\";i:122;s:9:\"total/tax\";i:123;s:11:\"total/total\";i:124;s:13:\"total/voucher\";i:125;s:9:\"user/user\";i:126;s:20:\"user/user_permission\";i:127;s:14:\"module/welcome\";i:128;s:18:\"module/information\";i:129;s:13:\"module/latest\";i:130;s:20:\"module/vqmod_manager\";}}');
+INSERT INTO oc_user_group VALUES ('1', 'Top Administrator', 'a:2:{s:6:\"access\";a:131:{i:0;s:17:\"catalog/attribute\";i:1;s:23:\"catalog/attribute_group\";i:2;s:16:\"catalog/category\";i:3;s:16:\"catalog/download\";i:4;s:14:\"catalog/filter\";i:5;s:19:\"catalog/information\";i:6;s:20:\"catalog/manufacturer\";i:7;s:12:\"catalog/news\";i:8;s:19:\"catalog/news_review\";i:9;s:14:\"catalog/option\";i:10;s:15:\"catalog/product\";i:11;s:14:\"catalog/review\";i:12;s:15:\"catalog/section\";i:13;s:18:\"common/filemanager\";i:14;s:13:\"design/banner\";i:15;s:19:\"design/custom_field\";i:16;s:13:\"design/layout\";i:17;s:14:\"extension/feed\";i:18;s:17:\"extension/manager\";i:19;s:16:\"extension/module\";i:20;s:17:\"extension/payment\";i:21;s:18:\"extension/shipping\";i:22;s:15:\"extension/total\";i:23;s:16:\"feed/google_base\";i:24;s:19:\"feed/google_sitemap\";i:25;s:20:\"localisation/country\";i:26;s:21:\"localisation/currency\";i:27;s:22:\"localisation/deal_zone\";i:28;s:21:\"localisation/geo_zone\";i:29;s:21:\"localisation/language\";i:30;s:25:\"localisation/length_class\";i:31;s:25:\"localisation/order_status\";i:32;s:26:\"localisation/return_action\";i:33;s:26:\"localisation/return_reason\";i:34;s:26:\"localisation/return_status\";i:35;s:25:\"localisation/stock_status\";i:36;s:22:\"localisation/tax_class\";i:37;s:21:\"localisation/tax_rate\";i:38;s:25:\"localisation/weight_class\";i:39;s:17:\"localisation/zone\";i:40;s:14:\"module/account\";i:41;s:16:\"module/affiliate\";i:42;s:13:\"module/banner\";i:43;s:17:\"module/bestseller\";i:44;s:15:\"module/carousel\";i:45;s:15:\"module/category\";i:46;s:15:\"module/featured\";i:47;s:13:\"module/filter\";i:48;s:18:\"module/google_talk\";i:49;s:18:\"module/information\";i:50;s:13:\"module/latest\";i:51;s:16:\"module/my_module\";i:52;s:16:\"module/slideshow\";i:53;s:14:\"module/special\";i:54;s:12:\"module/store\";i:55;s:20:\"module/vqmod_manager\";i:56;s:14:\"module/welcome\";i:57;s:24:\"payment/authorizenet_aim\";i:58;s:21:\"payment/bank_transfer\";i:59;s:14:\"payment/cheque\";i:60;s:11:\"payment/cod\";i:61;s:21:\"payment/free_checkout\";i:62;s:14:\"payment/liqpay\";i:63;s:20:\"payment/moneybookers\";i:64;s:14:\"payment/nochex\";i:65;s:15:\"payment/paymate\";i:66;s:16:\"payment/paypoint\";i:67;s:13:\"payment/payza\";i:68;s:26:\"payment/perpetual_payments\";i:69;s:14:\"payment/pp_pro\";i:70;s:17:\"payment/pp_pro_uk\";i:71;s:19:\"payment/pp_standard\";i:72;s:15:\"payment/sagepay\";i:73;s:22:\"payment/sagepay_direct\";i:74;s:18:\"payment/sagepay_us\";i:75;s:19:\"payment/twocheckout\";i:76;s:28:\"payment/web_payment_software\";i:77;s:16:\"payment/worldpay\";i:78;s:27:\"report/affiliate_commission\";i:79;s:22:\"report/customer_credit\";i:80;s:22:\"report/customer_online\";i:81;s:21:\"report/customer_order\";i:82;s:22:\"report/customer_reward\";i:83;s:24:\"report/product_purchased\";i:84;s:21:\"report/product_viewed\";i:85;s:18:\"report/sale_coupon\";i:86;s:17:\"report/sale_order\";i:87;s:18:\"report/sale_return\";i:88;s:20:\"report/sale_shipping\";i:89;s:15:\"report/sale_tax\";i:90;s:14:\"sale/affiliate\";i:91;s:12:\"sale/contact\";i:92;s:11:\"sale/coupon\";i:93;s:13:\"sale/customer\";i:94;s:20:\"sale/customer_ban_ip\";i:95;s:19:\"sale/customer_group\";i:96;s:10:\"sale/order\";i:97;s:11:\"sale/return\";i:98;s:12:\"sale/voucher\";i:99;s:18:\"sale/voucher_theme\";i:100;s:15:\"setting/setting\";i:101;s:13:\"setting/store\";i:102;s:16:\"shipping/auspost\";i:103;s:17:\"shipping/citylink\";i:104;s:14:\"shipping/fedex\";i:105;s:13:\"shipping/flat\";i:106;s:13:\"shipping/free\";i:107;s:13:\"shipping/item\";i:108;s:23:\"shipping/parcelforce_48\";i:109;s:15:\"shipping/pickup\";i:110;s:19:\"shipping/royal_mail\";i:111;s:12:\"shipping/ups\";i:112;s:13:\"shipping/usps\";i:113;s:15:\"shipping/weight\";i:114;s:11:\"tool/backup\";i:115;s:14:\"tool/error_log\";i:116;s:12:\"total/coupon\";i:117;s:12:\"total/credit\";i:118;s:14:\"total/handling\";i:119;s:16:\"total/klarna_fee\";i:120;s:19:\"total/low_order_fee\";i:121;s:12:\"total/reward\";i:122;s:14:\"total/shipping\";i:123;s:15:\"total/sub_total\";i:124;s:9:\"total/tax\";i:125;s:11:\"total/total\";i:126;s:13:\"total/voucher\";i:127;s:9:\"user/user\";i:128;s:20:\"user/user_permission\";i:129;s:13:\"module/filter\";i:130;s:11:\"module/deal\";}s:6:\"modify\";a:131:{i:0;s:17:\"catalog/attribute\";i:1;s:23:\"catalog/attribute_group\";i:2;s:16:\"catalog/category\";i:3;s:16:\"catalog/download\";i:4;s:14:\"catalog/filter\";i:5;s:19:\"catalog/information\";i:6;s:20:\"catalog/manufacturer\";i:7;s:12:\"catalog/news\";i:8;s:19:\"catalog/news_review\";i:9;s:14:\"catalog/option\";i:10;s:15:\"catalog/product\";i:11;s:14:\"catalog/review\";i:12;s:15:\"catalog/section\";i:13;s:18:\"common/filemanager\";i:14;s:13:\"design/banner\";i:15;s:19:\"design/custom_field\";i:16;s:13:\"design/layout\";i:17;s:14:\"extension/feed\";i:18;s:17:\"extension/manager\";i:19;s:16:\"extension/module\";i:20;s:17:\"extension/payment\";i:21;s:18:\"extension/shipping\";i:22;s:15:\"extension/total\";i:23;s:16:\"feed/google_base\";i:24;s:19:\"feed/google_sitemap\";i:25;s:20:\"localisation/country\";i:26;s:21:\"localisation/currency\";i:27;s:22:\"localisation/deal_zone\";i:28;s:21:\"localisation/geo_zone\";i:29;s:21:\"localisation/language\";i:30;s:25:\"localisation/length_class\";i:31;s:25:\"localisation/order_status\";i:32;s:26:\"localisation/return_action\";i:33;s:26:\"localisation/return_reason\";i:34;s:26:\"localisation/return_status\";i:35;s:25:\"localisation/stock_status\";i:36;s:22:\"localisation/tax_class\";i:37;s:21:\"localisation/tax_rate\";i:38;s:25:\"localisation/weight_class\";i:39;s:17:\"localisation/zone\";i:40;s:14:\"module/account\";i:41;s:16:\"module/affiliate\";i:42;s:13:\"module/banner\";i:43;s:17:\"module/bestseller\";i:44;s:15:\"module/carousel\";i:45;s:15:\"module/category\";i:46;s:15:\"module/featured\";i:47;s:13:\"module/filter\";i:48;s:18:\"module/google_talk\";i:49;s:18:\"module/information\";i:50;s:13:\"module/latest\";i:51;s:16:\"module/my_module\";i:52;s:16:\"module/slideshow\";i:53;s:14:\"module/special\";i:54;s:12:\"module/store\";i:55;s:20:\"module/vqmod_manager\";i:56;s:14:\"module/welcome\";i:57;s:24:\"payment/authorizenet_aim\";i:58;s:21:\"payment/bank_transfer\";i:59;s:14:\"payment/cheque\";i:60;s:11:\"payment/cod\";i:61;s:21:\"payment/free_checkout\";i:62;s:14:\"payment/liqpay\";i:63;s:20:\"payment/moneybookers\";i:64;s:14:\"payment/nochex\";i:65;s:15:\"payment/paymate\";i:66;s:16:\"payment/paypoint\";i:67;s:13:\"payment/payza\";i:68;s:26:\"payment/perpetual_payments\";i:69;s:14:\"payment/pp_pro\";i:70;s:17:\"payment/pp_pro_uk\";i:71;s:19:\"payment/pp_standard\";i:72;s:15:\"payment/sagepay\";i:73;s:22:\"payment/sagepay_direct\";i:74;s:18:\"payment/sagepay_us\";i:75;s:19:\"payment/twocheckout\";i:76;s:28:\"payment/web_payment_software\";i:77;s:16:\"payment/worldpay\";i:78;s:27:\"report/affiliate_commission\";i:79;s:22:\"report/customer_credit\";i:80;s:22:\"report/customer_online\";i:81;s:21:\"report/customer_order\";i:82;s:22:\"report/customer_reward\";i:83;s:24:\"report/product_purchased\";i:84;s:21:\"report/product_viewed\";i:85;s:18:\"report/sale_coupon\";i:86;s:17:\"report/sale_order\";i:87;s:18:\"report/sale_return\";i:88;s:20:\"report/sale_shipping\";i:89;s:15:\"report/sale_tax\";i:90;s:14:\"sale/affiliate\";i:91;s:12:\"sale/contact\";i:92;s:11:\"sale/coupon\";i:93;s:13:\"sale/customer\";i:94;s:20:\"sale/customer_ban_ip\";i:95;s:19:\"sale/customer_group\";i:96;s:10:\"sale/order\";i:97;s:11:\"sale/return\";i:98;s:12:\"sale/voucher\";i:99;s:18:\"sale/voucher_theme\";i:100;s:15:\"setting/setting\";i:101;s:13:\"setting/store\";i:102;s:16:\"shipping/auspost\";i:103;s:17:\"shipping/citylink\";i:104;s:14:\"shipping/fedex\";i:105;s:13:\"shipping/flat\";i:106;s:13:\"shipping/free\";i:107;s:13:\"shipping/item\";i:108;s:23:\"shipping/parcelforce_48\";i:109;s:15:\"shipping/pickup\";i:110;s:19:\"shipping/royal_mail\";i:111;s:12:\"shipping/ups\";i:112;s:13:\"shipping/usps\";i:113;s:15:\"shipping/weight\";i:114;s:11:\"tool/backup\";i:115;s:14:\"tool/error_log\";i:116;s:12:\"total/coupon\";i:117;s:12:\"total/credit\";i:118;s:14:\"total/handling\";i:119;s:16:\"total/klarna_fee\";i:120;s:19:\"total/low_order_fee\";i:121;s:12:\"total/reward\";i:122;s:14:\"total/shipping\";i:123;s:15:\"total/sub_total\";i:124;s:9:\"total/tax\";i:125;s:11:\"total/total\";i:126;s:13:\"total/voucher\";i:127;s:9:\"user/user\";i:128;s:20:\"user/user_permission\";i:129;s:13:\"module/filter\";i:130;s:11:\"module/deal\";}}');
 INSERT INTO oc_user_group VALUES ('10', 'Demonstration', '');
 
 -- ----------------------------
