@@ -9,8 +9,8 @@
     <?php } ?>
   </div>
 </div>
-<script type="text/javascript"><!--
+<script type="text/javascript">
 $(document).ready(function() {
 	$('#slideshow<?php echo $module; ?>').nivoSlider();
 });
---></script>
+</script>

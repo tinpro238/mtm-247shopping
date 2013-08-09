@@ -14,7 +14,7 @@
             <div class="buttons"><a onclick="$('#form').submit();" class="button"><?php echo $button_save; ?></a><a href="<?php echo $cancel; ?>" class="button"><?php echo $button_cancel; ?></a></div>
         </div>
         <div class="content">
-            <div id="tabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a><a href="#tab-data"><?php echo $tab_data; ?></a><a href="#tab-links"><?php echo $tab_links; ?></a><a href="#tab-attribute"><?php echo $tab_attribute; ?></a><a href="#tab-option"><?php echo $tab_option; ?></a><a href="#tab-discount"><?php echo $tab_discount; ?></a><a href="#tab-special"><?php echo $tab_special; ?></a><a href="#tab-image"><?php echo $tab_image; ?></a><a href="#tab-reward"><?php echo $tab_reward; ?></a><a href="#tab-design"><?php echo $tab_design; ?></a></div>
+            <div id="tabs" class="htabs"><a href="#tab-general"><?php echo $tab_general; ?></a><a href="#tab-data"><?php echo $tab_data; ?></a><a href="#tab-links"><?php echo $tab_links; ?></a><!--<a href="#tab-attribute"><?php echo $tab_attribute; ?></a>--><a href="#tab-option"><?php echo $tab_option; ?></a><!--<a href="#tab-discount"><?php echo $tab_discount; ?></a>--><a href="#tab-image"><?php echo $tab_image; ?></a><!--<a href="#tab-reward"><?php echo $tab_reward; ?></a>--><!--<a href="#tab-design"><?php echo $tab_design; ?></a>--><a href="#tab-special"><?php echo $tab_special; ?></a></div>
             <form action="<?php echo $action; ?>" method="post" enctype="multipart/form-data" id="form">
                 <div id="tab-general">
                     <div id="languages" class="htabs">
@@ -58,46 +58,59 @@
                 </div>
                 <div id="tab-data">
                     <table class="form">
-                        <tr>
+                        <tr style="display:none;">
                             <td><span class="required">*</span> <?php echo $entry_model; ?></td>
                             <td><input type="text" name="model" value="<?php echo $model; ?>" />
                                 <?php if ($error_model) { ?>
                                     <span class="error"><?php echo $error_model; ?></span>
                                 <?php } ?></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none;">
                             <td><?php echo $entry_sku; ?></td>
                             <td><input type="text" name="sku" value="<?php echo $sku; ?>" /></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none;">
                             <td><?php echo $entry_upc; ?></td>
                             <td><input type="text" name="upc" value="<?php echo $upc; ?>" /></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none;">
                             <td><?php echo $entry_ean; ?></td>
                             <td><input type="text" name="ean" value="<?php echo $ean; ?>" /></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none;">
                             <td><?php echo $entry_jan; ?></td>
                             <td><input type="text" name="jan" value="<?php echo $jan; ?>" /></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none;">
                             <td><?php echo $entry_isbn; ?></td>
                             <td><input type="text" name="isbn" value="<?php echo $isbn; ?>" /></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none;">
                             <td><?php echo $entry_mpn; ?></td>
                             <td><input type="text" name="mpn" value="<?php echo $mpn; ?>" /></td>
                         </tr>
                         <tr>
+                            <td><?php echo $entry_zone; ?></td>
+                            <td><select name="zone_id">
+                                    <option value="0"><?php echo $text_none; ?></option>
+                                    <?php foreach ($zone as $rs) { ?>
+                                        <?php if ($rs['zone_id'] == $zone_id) { ?>
+                                            <option value="<?php echo $rs['zone_id']; ?>" selected="selected"><?php echo $rs['name']; ?></option>
+                                        <?php } else { ?>
+                                            <option value="<?php echo $rs['zone_id']; ?>"><?php echo $rs['name']; ?></option>
+                                        <?php } ?>
+                                    <?php } ?>
+                                </select></td>
+                        </tr>
+                        <tr>
                             <td><?php echo $entry_location; ?></td>
-                            <td><input type="text" name="location" value="<?php echo $location; ?>" /></td>
+                            <td><input type="text" name="location" value="<?php echo $location; ?>" size="60" /></td>
                         </tr>
                         <tr>
                             <td><?php echo $entry_price; ?></td>
                             <td><input type="text" name="price" value="<?php echo $price; ?>" /></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none;">
                             <td><?php echo $entry_tax_class; ?></td>
                             <td><select name="tax_class_id">
                                     <option value="0"><?php echo $text_none; ?></option>
@@ -109,16 +122,24 @@
                                         <?php } ?>
                                     <?php } ?>
                                 </select></td>
+                        </tr>                        
+                        <tr>
+                            <td><?php echo $entry_quantity_entered; ?></td>
+                            <td><input type="text" name="quantity_entered" value="<?php echo $quantity_entered; ?>" size="2" /></td>
                         </tr>
                         <tr>
                             <td><?php echo $entry_quantity; ?></td>
                             <td><input type="text" name="quantity" value="<?php echo $quantity; ?>" size="2" /></td>
                         </tr>
                         <tr>
+                            <td><?php echo $entry_quantity_sold; ?></td>
+                            <td><input type="text" name="quantity_sold" value="<?php echo $quantity_sold; ?>" size="2" /></td>
+                        </tr>
+                        <tr>
                             <td><?php echo $entry_minimum; ?></td>
                             <td><input type="text" name="minimum" value="<?php echo $minimum; ?>" size="2" /></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none;">
                             <td><?php echo $entry_subtract; ?></td>
                             <td><select name="subtract">
                                     <?php if ($subtract) { ?>
@@ -130,7 +151,7 @@
                                     <?php } ?>
                                 </select></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none;">
                             <td><?php echo $entry_stock_status; ?></td>
                             <td><select name="stock_status_id">
                                     <?php foreach ($stock_statuses as $stock_status) { ?>
@@ -142,7 +163,7 @@
                                     <?php } ?>
                                 </select></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none;">
                             <td><?php echo $entry_shipping; ?></td>
                             <td><?php if ($shipping) { ?>
                                     <input type="radio" name="shipping" value="1" checked="checked" />
@@ -171,13 +192,13 @@
                             <td><?php echo $entry_date_available; ?></td>
                             <td><input type="text" name="date_available" value="<?php echo $date_available; ?>" size="12" class="date" /></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none;">
                             <td><?php echo $entry_dimension; ?></td>
                             <td><input type="text" name="length" value="<?php echo $length; ?>" size="4" />
                                 <input type="text" name="width" value="<?php echo $width; ?>" size="4" />
                                 <input type="text" name="height" value="<?php echo $height; ?>" size="4" /></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none;">
                             <td><?php echo $entry_length; ?></td>
                             <td><select name="length_class_id">
                                     <?php foreach ($length_classes as $length_class) { ?>
@@ -189,11 +210,11 @@
                                     <?php } ?>
                                 </select></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none;">
                             <td><?php echo $entry_weight; ?></td>
                             <td><input type="text" name="weight" value="<?php echo $weight; ?>" /></td>
                         </tr>
-                        <tr>
+                        <tr style="display:none;">
                             <td><?php echo $entry_weight_class; ?></td>
                             <td><select name="weight_class_id">
                                     <?php foreach ($weight_classes as $weight_class) { ?>
@@ -322,7 +343,7 @@
                         </tr>
                     </table>
                 </div>
-                <div id="tab-attribute">
+                <div id="tab-attribute" style="display:none;">
                     <table id="attribute" class="list">
                         <thead>
                             <tr>
@@ -526,7 +547,7 @@
                         <?php $option_row++; ?>
                     <?php } ?>
                 </div>
-                <div id="tab-discount">
+                <div id="tab-discount" style="display:none;">
                     <table id="discount" class="list">
                         <thead>
                             <tr>
@@ -574,9 +595,12 @@
                     <table id="special" class="list">
                         <thead>
                             <tr>
-                                <td class="left"><?php echo $entry_customer_group; ?></td>
+                                <td class="right"><?php echo $entry_deal_id; ?></td>
+                                <td class="left" style="display:none;"><?php echo $entry_customer_group; ?></td>
                                 <td class="right"><?php echo $entry_priority; ?></td>
                                 <td class="right"><?php echo $entry_price; ?></td>
+                                <td class="right"><?php echo $entry_deal_quantity_init; ?></td>
+                                <td class="right"><?php echo $entry_deal_quantity_sold; ?></td>
                                 <td class="left"><?php echo $entry_date_start; ?></td>
                                 <td class="left"><?php echo $entry_date_end; ?></td>
                                 <td></td>
@@ -586,7 +610,8 @@
                         <?php foreach ($product_specials as $product_special) { ?>
                             <tbody id="special-row<?php echo $special_row; ?>">
                                 <tr>
-                                    <td class="left"><select name="product_special[<?php echo $special_row; ?>][customer_group_id]">
+                                    <td class="right" ><input style="font-weight: bold;" type="text" disabled="disabled" value="<?php echo $product_special['product_special_id']; ?>" size="2" /></td>
+                                    <td class="left" style="display:none;"><select name="product_special[<?php echo $special_row; ?>][customer_group_id]">
                                             <?php foreach ($customer_groups as $customer_group) { ?>
                                                 <?php if ($customer_group['customer_group_id'] == $product_special['customer_group_id']) { ?>
                                                     <option value="<?php echo $customer_group['customer_group_id']; ?>" selected="selected"><?php echo $customer_group['name']; ?></option>
@@ -594,9 +619,11 @@
                                                     <option value="<?php echo $customer_group['customer_group_id']; ?>"><?php echo $customer_group['name']; ?></option>
                                                 <?php } ?>
                                             <?php } ?>
-                                        </select></td>
+                                        </select></td>                                    
                                     <td class="right"><input type="text" name="product_special[<?php echo $special_row; ?>][priority]" value="<?php echo $product_special['priority']; ?>" size="2" /></td>
                                     <td class="right"><input type="text" name="product_special[<?php echo $special_row; ?>][price]" value="<?php echo $product_special['price']; ?>" /></td>
+                                    <td class="right"><input type="text" name="product_special[<?php echo $special_row; ?>][quantity_init]" value="<?php echo $product_special['quantity_init']; ?>" /></td>
+                                    <td class="right"><input type="text" disabled="disabled" value="<?php echo $product_special['quantity_sold']; ?>" /></td>
                                     <td class="left"><input type="text" name="product_special[<?php echo $special_row; ?>][date_start]" value="<?php echo $product_special['date_start']; ?>" class="date" /></td>
                                     <td class="left"><input type="text" name="product_special[<?php echo $special_row; ?>][date_end]" value="<?php echo $product_special['date_end']; ?>" class="date" /></td>
                                     <td class="left"><a onclick="$('#special-row<?php echo $special_row; ?>').remove();" class="button"><?php echo $button_remove; ?></a></td>
@@ -606,7 +633,7 @@
                         <?php } ?>
                         <tfoot>
                             <tr>
-                                <td colspan="5"></td>
+                                <td colspan="7"></td>
                                 <td class="left"><a onclick="addSpecial();" class="button"><?php echo $button_add_special; ?></a></td>
                             </tr>
                         </tfoot>
@@ -644,7 +671,7 @@
                         </tfoot>
                     </table>
                 </div>
-                <div id="tab-reward">
+                <div id="tab-reward" style="display:none;">
                     <table class="form">
                         <tr>
                             <td><?php echo $entry_points; ?></td>
@@ -668,7 +695,7 @@
                         <?php } ?>
                     </table>
                 </div>
-                <div id="tab-design">
+                <div id="tab-design" style="display:none;">
                     <table class="list">
                         <thead>
                             <tr>
@@ -1200,13 +1227,16 @@ var special_row = <?php echo $special_row; ?>;
     function addSpecial() {
         html = '<tbody id="special-row' + special_row + '">';
         html += '  <tr>';
-        html += '    <td class="left"><select name="product_special[' + special_row + '][customer_group_id]">';
+        html += '    <td class="right"><input style="font-weight:bold;" type="text" disabled="disabled" size="2" /></td>';
+        html += '    <td class="left" style="display:none;"><select name="product_special[' + special_row + '][customer_group_id]">';
 <?php foreach ($customer_groups as $customer_group) { ?>
             html += '      <option value="<?php echo $customer_group['customer_group_id']; ?>"><?php echo $customer_group['name']; ?></option>';
 <?php } ?>
         html += '    </select></td>';
         html += '    <td class="right"><input type="text" name="product_special[' + special_row + '][priority]" value="" size="2" /></td>';
         html += '    <td class="right"><input type="text" name="product_special[' + special_row + '][price]" value="" /></td>';
+        html += '    <td class="right"><input type="text" name="product_special[' + special_row + '][quantity_init]" value="" /></td>';
+        html += '    <td class="right"><input type="text" disabled="disabled" value="" /></td>';
         html += '    <td class="left"><input type="text" name="product_special[' + special_row + '][date_start]" value="" class="date" /></td>';
         html += '    <td class="left"><input type="text" name="product_special[' + special_row + '][date_end]" value="" class="date" /></td>';
         html += '    <td class="left"><a onclick="$(\'#special-row' + special_row + '\').remove();" class="button"><?php echo $button_remove; ?></a></td>';

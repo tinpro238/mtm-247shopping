@@ -109,6 +109,7 @@ class ControllerCommonHeader extends Controller {
 		$this->data['text_weight_class'] = $this->language->get('text_weight_class');
 		$this->data['text_length_class'] = $this->language->get('text_length_class');
 		$this->data['text_zone'] = $this->language->get('text_zone');
+                $this->data['text_deal_zone'] = $this->language->get('text_deal_zone');
 		
 		if (!$this->user->isLogged() || !isset($this->request->get['token']) || !isset($this->session->data['token']) || ($this->request->get['token'] != $this->session->data['token'])) {
 			$this->data['logged'] = '';
@@ -181,7 +182,8 @@ class ControllerCommonHeader extends Controller {
 			$this->data['weight_class'] = $this->url->link('localisation/weight_class', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['length_class'] = $this->url->link('localisation/length_class', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['zone'] = $this->url->link('localisation/zone', 'token=' . $this->session->data['token'], 'SSL');
-			
+			$this->data['deal_zone'] = $this->url->link('localisation/deal_zone', 'token=' . $this->session->data['token'], 'SSL');
+                        
                         //CUSTOMIZE BY TINNGUYEN
                         $this->data['section'] = $this->url->link('catalog/section', 'token=' . $this->session->data['token'], 'SSL');
 			$this->data['news'] = $this->url->link('catalog/news', 'token=' . $this->session->data['token'], 'SSL');

@@ -15,16 +15,27 @@ $_['text_option_value']      = 'Giá trị tùy chọn';
 $_['text_percent']           = 'Tỷ lệ phần trăm';
 $_['text_amount']            = 'Số lượng Cố định';
 
+// Tab
+$_['tab_special']            = 'Deals';
+
+//Button
+$_['button_add_special']     = 'Thêm Deal';
+
 // Column
 $_['column_name']            = 'Tên sản phẩm';
 $_['column_model']           = 'Model';
 $_['column_image']           = 'Hình ảnh';
 $_['column_price']           = 'Giá';
-$_['column_quantity']        = 'Số lượng';
+$_['column_quantity_entered']= 'Số lượng nhập';
+$_['column_quantity']        = 'Số lượng tồn';
+$_['column_quantity_sold']   = 'Số lượng bán';
 $_['column_status']          = 'Trạng thái';
 $_['column_action']          = 'Thao tác';
 
 // Entry
+$_['entry_deal_quantity_init']  = 'Số lượng ban đầu:';
+$_['entry_deal_quantity_sold']  = 'Số lượng đặt mua:';
+$_['entry_deal_id']             = 'Mã Deal:';
 $_['entry_name']             = 'Tên sản phẩm:';
 $_['entry_meta_keyword']     = 'Từ khóa:';
 $_['entry_meta_description'] = 'Mô tả từ khóa:';
@@ -35,12 +46,15 @@ $_['entry_keyword']          = 'Từ khóa SEO:';
 $_['entry_model']            = 'Model:';
 $_['entry_sku']              = 'SKU:';
 $_['entry_upc']              = 'UPC:';
+$_['entry_zone']             = 'Tỉnh/Thành phố:';
 $_['entry_location']         = 'Địa điểm:';
 $_['entry_manufacturer']     = 'Hãng sản xuất:';
 $_['entry_shipping']         = 'Yêu cầu Vận chuyển:'; 
 $_['entry_date_available']   = 'Ngày cập nhật:';
-$_['entry_quantity']         = 'Số lượng:';
+$_['entry_quantity_enterd']  = 'Số lượng nhập:';
+$_['entry_quantity']         = 'Số lượng tồn:';
 $_['entry_minimum']          = 'Số lượng tối thiểu:<br/><span class="help">Số lượng ít nhất khi đặt hàng</span>';
+$_['entry_quantity_sold']    = 'Số lượng bán:';
 $_['entry_stock_status']     = 'Hết hàng:<br/><span class="help">Tình trạng hiện ra khi một sản phẩm hết hàng</span>';
 $_['entry_price']            = 'Giá:';
 $_['entry_tax_class']        = 'Loại Thuế:';
